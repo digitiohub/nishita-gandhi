@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-light: #f6f3ec;
+  --bg-dark: #16181d;
+  --surface-dark: #1f222a;
+  --border-dark: #2c303a;
+  --border-light: #e3ddce;
+  --foreground: #1b1a16;
+  --foreground-inv: #f6f3ec;
+  --muted: #6b665c;
+  --muted-inv: #9a9da6;
+  --accent: #3457d5;
+  --accent-dark: #28409e;
+  --accent-muted: rgba(52, 87, 213, 0.15);
+
+  --radius: 4px;
+
+  /* shadcn/ui radix tokens (light) */
+  --background: 40 25% 95%;
+  --border: 35 18% 85%;
+  --input: 35 18% 85%;
+  --ring: 228 70% 52%;
+  --destructive: 6 72% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --card: 40 25% 95%;
+  --card-foreground: 30 8% 9%;
+  --popover: 40 25% 95%;
+  --popover-foreground: 30 8% 9%;
+  --accent2: 228 55% 90%;
+  --accent2-foreground: 30 8% 9%;
+}
+
+.dark {
+  --background: 220 14% 10%;
+  --border: 223 14% 20%;
+  --input: 223 14% 20%;
+  --ring: 228 70% 52%;
+  --card: 224 15% 14%;
+  --card-foreground: 40 25% 95%;
+  --popover: 224 15% 14%;
+  --popover-foreground: 40 25% 95%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--foreground);
+  font-family: var(--font-manrope), sans-serif;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: var(--foreground-inv);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
