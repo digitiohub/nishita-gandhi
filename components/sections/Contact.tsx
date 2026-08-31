@@ -10,6 +10,7 @@ import {
   EnvelopeSimple,
   LinkedinLogo,
   MapPin,
+  Phone,
 } from "@phosphor-icons/react";
 
 import { Button } from "@/components/ui/button";
@@ -35,6 +36,7 @@ const ContactCanvas = dynamic(
 const STAGES = ["Pre-revenue", "₹0-₹50L", "₹50L-₹2Cr", "₹2Cr+"];
 
 const CHANNELS = [
+  { icon: Phone, label: "Phone", value: client.phone, href: `tel:${client.phoneHref}` },
   { icon: EnvelopeSimple, label: "Email", value: client.email, href: `mailto:${client.email}` },
   { icon: LinkedinLogo, label: "LinkedIn", value: "Professional profile", href: "https://www.linkedin.com" },
 ];

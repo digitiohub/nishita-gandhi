@@ -31,6 +31,8 @@ export const client = {
   foundersAdvised: 100,
   location: "Mumbai, India",
   email: "hello@nishitagandhi.com",
+  phone: "+91 99676 46373",
+  phoneHref: "+919967646373",
   specializations: [
     "Direct Tax Compliance (Income Tax, TDS, Advance Tax)",
     "Indirect Tax / GST (Registration, Monthly Filings, Notices)",
