@@ -1,47 +1,26 @@
 import type { Variants } from "framer-motion";
 
+export const ease = [0.16, 1, 0.3, 1] as const;
+
 export const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease } },
 };
 
 export const staggerContainer: Variants = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.1 } },
+  visible: { transition: { staggerChildren: 0.08 } },
 };
 
 export const fadeIn: Variants = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.4 } },
+  visible: { opacity: 1, transition: { duration: 0.5 } },
 };
 
-export const scaleSpring: Variants = {
-  hidden: { opacity: 0, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: { type: "spring", stiffness: 260, damping: 20 },
-  },
-};
-
-export const slideInLeft: Variants = {
-  hidden: { opacity: 0, x: -32, rotate: -4 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    rotate: -4,
-    transition: { type: "spring", stiffness: 180, damping: 18 },
-  },
-};
-
-export const slideInRight: Variants = {
-  hidden: { opacity: 0, x: 32, rotate: 3 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    rotate: 3,
-    transition: { type: "spring", stiffness: 180, damping: 18 },
-  },
+// Word rises from behind an overflow-hidden mask
+export const wordReveal: Variants = {
+  hidden: { y: "110%" },
+  visible: { y: 0, transition: { duration: 0.7, ease } },
 };
 
 export const viewportOnce = { once: true, margin: "-80px" } as const;

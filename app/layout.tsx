@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Serif_Display, Manrope } from "next/font/google";
+import { MotionProvider } from "@/components/MotionProvider";
 import "./globals.css";
 
 const dmSerifDisplay = DM_Serif_Display({
@@ -18,9 +19,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Nishita Gandhi, Chartered Accountant",
+  title: "CA Nishita Gandhi, Chartered Accountant in Mulund, Mumbai",
   description:
-    "10+ years advising founders on tax, audit, and compliance. Mumbai-based CA.",
+    "Income tax, NRI tax, GST, audit and company compliance. Chartered Accountant since 2015, based in Mulund West, Mumbai.",
 };
 
 export default function RootLayout({
@@ -30,7 +31,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${dmSerifDisplay.variable} ${manrope.variable}`}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <MotionProvider>{children}</MotionProvider>
+      </body>
     </html>
   );
 }

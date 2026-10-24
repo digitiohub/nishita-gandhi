@@ -5,12 +5,12 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-xs font-semibold uppercase tracking-[0.08em] transition-all duration-200 ease-out hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:hover:translate-y-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-xs font-semibold uppercase tracking-[0.08em] transition-all duration-200 ease-out hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] focus-visible:shadow-[0_0_0_6px_rgba(94,196,182,0.22)] motion-reduce:hover:translate-y-0 disabled:pointer-events-none disabled:opacity-50 disabled:hover:translate-y-0",
   {
     variants: {
       variant: {
         default:
-          "bg-accent text-foreground-inv shadow-[0_1px_2px_rgba(22,24,29,0.15)] hover:bg-accent-dark hover:shadow-[0_10px_24px_-8px_rgba(52,87,213,0.5)]",
+          "bg-accent text-bg-dark shadow-[0_1px_2px_rgba(14,26,43,0.15)] hover:bg-[#7DD3C7] hover:shadow-[0_12px_28px_-10px_rgba(94,196,182,0.55)]",
         outline:
           "border border-foreground/25 bg-transparent text-foreground hover:border-foreground/60 hover:bg-foreground/5",
         "outline-inverse":

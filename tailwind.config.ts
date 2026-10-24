@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  future: { hoverOnlyWhenSupported: true },
   darkMode: ["class"],
   content: [
     "./app/**/*.{ts,tsx}",
@@ -10,27 +11,27 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        accent: "#3457D5",
-        "accent-dark": "#28409E",
+        accent: "#5EC4B6",
+        "accent-dark": "#1A6B62",
         "bg-light": "#F6F3EC",
-        "bg-dark": "#16181D",
-        "surface-dark": "#1F222A",
-        "border-dark": "#2C303A",
+        "bg-dark": "#0E1A2B",
+        "surface-dark": "#14243A",
+        "border-dark": "#22344E",
         "border-light": "#E3DDCE",
-        foreground: "#1B1A16",
+        foreground: "#14202E",
         "foreground-inv": "#F6F3EC",
-        muted: "#6B665C",
-        "muted-inv": "#9A9DA6",
+        muted: "#5B6270",
+        "muted-inv": "#9AA7BA",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         primary: {
-          DEFAULT: "#3457D5",
-          foreground: "#F6F3EC",
+          DEFAULT: "#5EC4B6",
+          foreground: "#0E1A2B",
         },
         secondary: {
-          DEFAULT: "#1F222A",
+          DEFAULT: "#14243A",
           foreground: "#F6F3EC",
         },
         destructive: {
@@ -80,8 +81,8 @@ const config: Config = {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "accordion-down": "accordion-down 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
+        "accordion-up": "accordion-up 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
       },
     },
   },

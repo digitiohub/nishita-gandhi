@@ -6,6 +6,7 @@ import {
   useInView,
   useMotionValue,
   useMotionValueEvent,
+  useReducedMotion,
   useTransform,
   animate,
 } from "framer-motion";
@@ -14,31 +15,33 @@ import { Separator } from "@/components/ui/separator";
 import { fadeUp, staggerContainer, viewportOnce } from "@/lib/motion";
 
 const STATS = [
-  { value: 10, suffix: "+", label: "Years in Practice" },
-  { value: 100, suffix: "+", label: "Founders Advised" },
-  { value: 3, suffix: "", label: "Tax Domains" },
+  { value: 10, suffix: "+", label: "Years in audit & tax practice" },
+  { value: 15, suffix: "", label: "Services across six practice areas" },
+  { value: 3, suffix: "", label: "Languages: English, Hindi, Gujarati" },
 ];
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
-  const motionValue = useMotionValue(0);
+  const reduceMotion = useReducedMotion();
+  // Start at the real value so server-rendered HTML never shows 0
+  const motionValue = useMotionValue(value);
   const rounded = useTransform(motionValue, (v) => Math.round(v));
-  const [display, setDisplay] = useState(0);
+  const [display, setDisplay] = useState(value);
 
   useMotionValueEvent(rounded, "change", (latest) => setDisplay(latest));
 
   useEffect(() => {
-    if (!inView) return;
-    const controls = animate(motionValue, value, {
+    if (!inView || reduceMotion) return;
+    const controls = animate(motionValue, [0, value], {
       duration: 1.4,
       ease: [0.16, 1, 0.3, 1],
     });
     return controls.stop;
-  }, [inView, value, motionValue]);
+  }, [inView, value, motionValue, reduceMotion]);
 
   return (
-    <span ref={ref} className="font-serif text-[44px] leading-none text-foreground">
+    <span ref={ref} className="font-serif text-[44px] leading-none sm:text-[56px] text-foreground tabular-nums">
       {display}
       {suffix}
     </span>
@@ -47,7 +50,7 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
 
 export function Practice() {
   return (
-    <section id="about" className="bg-bg-light px-6 py-24 lg:px-10 lg:py-32">
+    <section id="practice" className="bg-bg-light px-6 py-24 lg:px-10 lg:py-32">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -65,22 +68,23 @@ export function Practice() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr] lg:gap-16">
           <motion.h2
             variants={fadeUp}
-            className="font-serif text-4xl leading-[1.1] text-foreground sm:text-5xl lg:text-6xl"
+            className="font-serif text-[40px] leading-[1.1] text-foreground sm:text-5xl lg:text-6xl"
           >
-            More than filings.
+            One Chartered Accountant.
             <br />
-            One point of contact.
+            <span className="italic text-accent-dark">Your whole file.</span>
           </motion.h2>
 
           <motion.div variants={fadeUp} className="space-y-5 self-end text-base leading-[1.7] text-muted">
             <p>
-              I work with founders who are building real things and don&rsquo;t
-              have time to become tax experts.
+              Income tax, GST, audit and company compliance, handled by one
+              Chartered Accountant who personally reviews and signs off every
+              engagement.
             </p>
             <p>
-              Over a decade I&rsquo;ve helped businesses at every stage stay
-              compliant, pass audits, and actually understand their numbers,
-              without the jargon.
+              Based in Mulund West, working with clients across Mumbai, Thane
+              and Navi Mumbai, and with NRIs abroad through online document
+              sharing and video calls.
             </p>
           </motion.div>
         </div>
@@ -89,11 +93,11 @@ export function Practice() {
           <Separator className="my-14" />
         </motion.div>
 
-        <motion.div variants={fadeUp} className="flex flex-wrap gap-x-16 gap-y-8">
+        <motion.div variants={fadeUp} className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           {STATS.map((stat) => (
-            <div key={stat.label}>
+            <div key={stat.label} className="border-l border-border-light pl-6">
               <Counter value={stat.value} suffix={stat.suffix} />
-              <p className="mt-2 text-sm text-muted">{stat.label}</p>
+              <p className="mt-3 max-w-[22ch] text-sm leading-[1.5] text-muted">{stat.label}</p>
             </div>
           ))}
         </motion.div>

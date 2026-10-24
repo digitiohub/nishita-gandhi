@@ -1,33 +1,45 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { List } from "@phosphor-icons/react";
+import { List, Phone } from "@phosphor-icons/react";
 
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { client } from "@/lib/tokens";
+import { ease } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
+  { label: "Who We Serve", href: "#clients" },
   { label: "Process", href: "#process" },
-  { label: "Contact", href: "#contact" },
+  { label: "FAQ", href: "#faq" },
 ];
 
-function NavLink({ href, label, onClick }: { href: string; label: string; onClick?: () => void }) {
+function NavLink({ href, label, active }: { href: string; label: string; active: boolean }) {
   return (
     <a
       href={href}
-      onClick={onClick}
-      className="group relative text-xs font-semibold uppercase tracking-[0.1em] text-muted-inv transition-colors hover:text-foreground-inv"
+      aria-current={active ? "true" : undefined}
+      className={cn(
+        "group relative py-2 text-xs font-semibold uppercase tracking-[0.1em] text-muted-inv transition-colors duration-200 hover:text-foreground-inv focus-visible:text-foreground-inv",
+        active && "text-foreground-inv"
+      )}
     >
       {label}
-      <span className="absolute -bottom-2 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
+      <span
+        className={cn(
+          "absolute bottom-0 left-0 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-300 ease-out group-hover:scale-x-100 group-focus-visible:scale-x-100",
+          active && "scale-x-100"
+        )}
+      />
     </a>
   );
 }
@@ -51,63 +63,94 @@ function Logo() {
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("");
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrolled(latest > 8);
   });
 
+  // Highlight the link of the section crossing the middle of the viewport
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) setActive(`#${entry.target.id}`);
+        }
+      },
+      { rootMargin: "-45% 0px -50% 0px" }
+    );
+    NAV_LINKS.forEach(({ href }) => {
+      const el = document.querySelector(href);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <motion.header
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.5, ease }}
       className={cn(
-        "fixed inset-x-0 top-0 z-50 border-b border-transparent bg-bg-dark/90 backdrop-blur transition-[border-color,box-shadow] duration-300",
-        scrolled && "border-border-dark shadow-[0_8px_32px_rgba(0,0,0,0.25)]"
+        "fixed inset-x-0 top-0 z-50 border-b border-transparent bg-bg-dark/60 backdrop-blur-md transition-[background-color,border-color,box-shadow] duration-300",
+        scrolled && "border-border-dark bg-bg-dark/90 shadow-[0_8px_32px_rgba(4,10,20,0.35)]"
       )}
     >
       <nav className="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-6 lg:px-10">
         <Logo />
 
-        <div className="hidden items-center gap-9 lg:flex">
+        <div className="hidden items-center gap-8 lg:flex">
           {NAV_LINKS.map((link) => (
-            <NavLink key={link.href} {...link} />
+            <NavLink key={link.href} {...link} active={active === link.href} />
           ))}
         </div>
 
         <div className="hidden lg:block">
-          <Button variant="outline-inverse" size="sm" asChild>
-            <a href="#contact">Book a Call</a>
+          <Button size="sm" asChild>
+            <a href="#contact">Get in Touch</a>
           </Button>
         </div>
 
-        <div className="flex items-center gap-3 lg:hidden">
-          <Button variant="outline-inverse" size="sm" asChild>
-            <a href="#contact">Book a Call</a>
+        <div className="flex items-center gap-2 lg:hidden">
+          <Button variant="outline-inverse" size="sm" className="hidden sm:inline-flex" asChild>
+            <a href="#contact">Get in Touch</a>
           </Button>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <button
                 aria-label="Open menu"
-                className="flex h-9 w-9 items-center justify-center text-foreground-inv"
+                className="flex h-11 w-11 items-center justify-center rounded-full text-foreground-inv transition-colors hover:bg-foreground-inv/10"
               >
                 <List className="h-5 w-5" weight="regular" />
               </button>
             </SheetTrigger>
-            <SheetContent>
-              <div className="mt-12 flex flex-col gap-6">
-                {NAV_LINKS.map((link) => (
-                  <a
+            <SheetContent className="flex flex-col">
+              <SheetTitle className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-inv">
+                Menu
+              </SheetTitle>
+              <div className="mt-10 flex flex-col">
+                {[...NAV_LINKS, { label: "Contact", href: "#contact" }].map((link, i) => (
+                  <motion.a
                     key={link.href}
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="text-lg font-semibold uppercase tracking-[0.06em] text-foreground-inv transition-colors hover:text-accent"
+                    initial={{ opacity: 0, x: 16 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, ease, delay: 0.1 + i * 0.05 }}
+                    className="border-b border-border-dark py-4 font-serif text-2xl text-foreground-inv transition-colors hover:text-accent"
                   >
                     {link.label}
-                  </a>
+                  </motion.a>
                 ))}
               </div>
+              <a
+                href={`tel:${client.phoneHref}`}
+                className="mt-auto flex items-center gap-3 text-sm text-muted-inv transition-colors hover:text-accent"
+              >
+                <Phone size={18} className="text-accent" />
+                {client.phone}
+              </a>
             </SheetContent>
           </Sheet>
         </div>

@@ -1,111 +1,112 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
-import { fadeUp, staggerContainer, viewportOnce } from "@/lib/motion";
+import { ease, fadeUp, staggerContainer, viewportOnce } from "@/lib/motion";
 
 const STEPS = [
   {
-    number: "01",
-    title: "Discovery Call",
-    body: "30 minutes. You explain the business. I listen for the gaps.",
+    title: "Talk",
+    body: "Tell us what you need, what's already been filed and what the deadline is.",
   },
   {
-    number: "02",
-    title: "Compliance Review",
-    body: "I map what's filed, what's missing, and what's at risk. Full picture.",
+    title: "Review",
+    body: "We map what's done, what's pending and what's at risk, before anything else.",
   },
   {
-    number: "03",
-    title: "Clean-Up & Setup",
-    body: "Backlogs cleared, systems set, team briefed if needed.",
+    title: "Fix",
+    body: "Backlogs cleared, records organised, and a compliance calendar set for your year.",
   },
   {
-    number: "04",
-    title: "Ongoing Partnership",
-    body: "Monthly cadence. Proactive nudges. One contact. Always.",
+    title: "Stay ahead",
+    body: "Filings on schedule, a reminder before every due date, and one person to call.",
   },
 ];
 
-function StepCard({ step }: { step: (typeof STEPS)[number] }) {
-  return (
-    <div className="flex h-[340px] w-[82vw] shrink-0 flex-col justify-between border border-border-dark bg-surface-dark p-8 sm:w-[380px]">
-      <span className="font-serif text-5xl text-accent">{step.number}</span>
-      <div>
-        <h3 className="font-serif text-2xl text-foreground-inv">{step.title}</h3>
-        <p className="mt-3 text-sm leading-[1.6] text-muted-inv">{step.body}</p>
-      </div>
-    </div>
-  );
-}
+const LINE_DURATION = 1.4;
+const stepDelay = (i: number) => 0.2 + (i / (STEPS.length - 1)) * LINE_DURATION * 0.85;
+
+const lineFill: Variants = {
+  hidden: { scaleX: 0, scaleY: 0 },
+  visible: { scaleX: 1, scaleY: 1, transition: { duration: LINE_DURATION, ease: "easeInOut", delay: 0.2 } },
+};
+
+// Each dot lights up as the line reaches it
+const dot: Variants = {
+  hidden: { scale: 0.5, opacity: 0.3 },
+  visible: (i: number) => ({ scale: 1, opacity: 1, transition: { duration: 0.4, ease, delay: stepDelay(i) } }),
+};
+
+const step: Variants = {
+  hidden: { opacity: 0, y: 16 },
+  visible: (i: number) => ({ opacity: 1, y: 0, transition: { duration: 0.6, ease, delay: stepDelay(i) } }),
+};
 
 export function Process() {
-  const shouldReduceMotion = useReducedMotion();
-  const targetRef = useRef<HTMLDivElement>(null);
-  const trackRef = useRef<HTMLDivElement>(null);
-  const [trackDistance, setTrackDistance] = useState(0);
-
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["start start", "end end"],
-  });
-  const x = useTransform(scrollYProgress, [0, 1], [0, -trackDistance]);
-
-  useEffect(() => {
-    const el = trackRef.current;
-    if (!el) return;
-    const measure = () => setTrackDistance(Math.max(el.scrollWidth - window.innerWidth, 0));
-    measure();
-    const ro = new ResizeObserver(measure);
-    ro.observe(el);
-    window.addEventListener("resize", measure);
-    return () => {
-      ro.disconnect();
-      window.removeEventListener("resize", measure);
-    };
-  }, []);
-
-  if (shouldReduceMotion) {
-    return (
-      <section id="process" className="bg-bg-dark px-6 py-24 lg:px-10">
+  return (
+    <section id="process" className="bg-bg-dark px-6 py-24 lg:px-10 lg:py-32">
+      <div className="mx-auto max-w-[1400px]">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
           variants={staggerContainer}
-          className="mx-auto max-w-[1400px]"
+          className="mb-16 max-w-[640px]"
         >
-          <motion.h2 variants={fadeUp} className="font-serif text-4xl text-foreground-inv sm:text-5xl">
-            How we work together.
+          <motion.div variants={fadeUp} className="mb-6 flex items-center gap-3">
+            <span className="h-px w-8 bg-accent" />
+            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-inv">
+              04 &middot; How We Work
+            </span>
+          </motion.div>
+          <motion.h2 variants={fadeUp} className="font-serif text-[40px] leading-[1.1] text-foreground-inv sm:text-5xl lg:text-6xl">
+            Four steps to a file you never worry about.
           </motion.h2>
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {STEPS.map((step) => (
-              <motion.div key={step.number} variants={fadeUp}>
-                <StepCard step={step} />
+        </motion.div>
+
+        <motion.ol
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          className="relative grid grid-cols-1 gap-12 lg:grid-cols-4 lg:gap-8"
+        >
+          {/* Static track keeps the timeline readable with animation off */}
+          <div aria-hidden="true" className="absolute bottom-3 left-[11px] top-3 w-px bg-border-dark lg:left-3 lg:right-0 lg:top-[11px] lg:h-px lg:w-auto" />
+          <motion.div
+            aria-hidden="true"
+            variants={lineFill}
+            className="absolute bottom-3 left-[11px] top-3 w-px origin-top bg-accent lg:hidden"
+          />
+          <motion.div
+            aria-hidden="true"
+            variants={lineFill}
+            className="absolute left-3 right-0 top-[11px] hidden h-px origin-left bg-accent lg:block"
+          />
+
+          {STEPS.map((s, i) => (
+            <li key={s.title} className="group relative pl-12 lg:pl-0 lg:pt-14">
+              <motion.span
+                aria-hidden="true"
+                custom={i}
+                variants={dot}
+                className="absolute left-0 top-0 flex h-6 w-6 items-center justify-center rounded-full border border-accent bg-bg-dark"
+              >
+                <span className="h-2 w-2 rounded-full bg-accent" />
+              </motion.span>
+              <motion.div
+                custom={i}
+                variants={step}
+                className="rounded-lg border border-transparent transition-colors duration-200 group-hover:border-border-dark lg:-m-5 lg:p-5"
+              >
+                <span className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+                  Step {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="mt-3 font-serif text-3xl text-foreground-inv">{s.title}</h3>
+                <p className="mt-3 max-w-[34ch] text-sm leading-[1.65] text-muted-inv">{s.body}</p>
               </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </section>
-    );
-  }
-
-  return (
-    <section id="process" ref={targetRef} className="relative bg-bg-dark" style={{ height: "300vh" }}>
-      <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden py-20">
-        <div className="mx-auto mb-12 w-full max-w-[1400px] px-6 lg:px-10">
-          <h2 className="font-serif text-4xl text-foreground-inv sm:text-5xl">
-            How we work together.
-          </h2>
-        </div>
-
-        <motion.div ref={trackRef} style={{ x }} className="flex gap-6 pl-6 lg:pl-10">
-          {STEPS.map((step) => (
-            <StepCard key={step.number} step={step} />
+            </li>
           ))}
-          <div className="w-6 shrink-0 lg:w-10" aria-hidden="true" />
-        </motion.div>
+        </motion.ol>
       </div>
     </section>
   );
