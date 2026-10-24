@@ -482,7 +482,7 @@
       "**Don't** number sections; ordinals belong only to genuinely ordered process steps.",
       "**Don't** build icon-tile card grids or use stock CA imagery.",
       "**Don't** use teal as decoration, a band background, or a second emphasis word in a headline.",
-      "**Don't** shadow ledger rows or sections; only lifted objects (slip, card, portrait, scrolled nav, menus) get shadows.",
+      "**Don't** shadow ledger rows or sections; only lifted objects (slip, card, scrolled nav, menus) get shadows.",
       "**Don't** add a second WebGL or scroll-driven scene, or run the file stack on touch, reduced motion or without WebGL2."
     ]
   }

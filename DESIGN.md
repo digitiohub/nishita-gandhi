@@ -174,7 +174,7 @@ A three-part world: deep ledger navy, warm cream paper, and a teal that signals 
 
 ### Neutral
 - **Ledger Navy** (ledger-navy): page heads, the home hero, the home services band, the CtaBand close, the service-page aside card, the nav bar (at 70% opacity, 95% once scrolled), footer.
-- **Folder Slate** (folder-slate): raised surfaces on navy: menu item hover, menu footers, the portrait card backing.
+- **Folder Slate** (folder-slate): raised surfaces on navy: menu item hover, menu footers.
 - **Navy Rule** (navy-rule): hairlines, input underlines and pill borders on navy.
 - **Cream Paper** (cream-paper): the reading ground for all body content, the folder tab, and inverse text on navy.
 - **Slip Paper** (slip-paper): the documents checklist slip and the paper of the WebGL sheets; one step brighter than cream so the slip reads as a loose sheet on the page.
@@ -217,16 +217,15 @@ One spatial rule governs every band, the fixed nav and the hero included: outer 
 
 Bands stack vertically with 96px block padding (128px on large home bands); inner reading bodies use 80 to 96px. Page heads clear the 80px fixed nav with 128 to 176px top padding. Service pages run a two-column grid: an article capped at 68ch, and a 340px sticky aside (top 112px) holding the navy "What you get" card and an on-this-page list. Indexes set a 300px sticky group-name column beside the ledger on desktop. Anchor targets are offset 84 to 112px for the fixed nav.
 
-On phones every grid collapses to one column. The home hero reorders to headline, file stack still, actions, then lede.
+On phones every grid collapses to one column. The home hero reorders to headline, file stack still, then actions.
 
 ## Elevation & Depth
 
-Mostly flat: depth comes from tone (navy against cream, slate on navy) and from rules, not shadows. Shadows are soft, long and low-opacity, and appear only on objects that are physically "lifted" off the page: the portrait card, the checklist slip, the aside card, the scrolled nav, open menus, and the primary button on hover. The page heads carry a faint 96px grid at 5 to 6% opacity, masked toward one corner.
+Mostly flat: depth comes from tone (navy against cream, slate on navy) and from rules, not shadows. Shadows are soft, long and low-opacity, and appear only on objects that are physically "lifted" off the page: the checklist slip, the aside card, the scrolled nav, open menus, and the primary button on hover. The page heads carry a faint 96px grid at 5 to 6% opacity, masked toward one corner.
 
 ### Shadow Vocabulary
 - **Slip lift** (`box-shadow: 0 18px 40px -24px rgba(20,32,46,0.35), 0 2px 6px -2px rgba(20,32,46,0.08)`): the checklist slip on cream.
 - **Card lift** (`box-shadow: 0 24px 48px -28px rgba(14,26,43,0.6)`): the navy aside card on cream.
-- **Photo lift** (`box-shadow: 0 24px 48px -16px rgba(0,0,0,0.6)`): the portrait card and its badge on navy.
 - **Nav scrolled** (`box-shadow: 0 8px 32px rgba(4,10,20,0.35)`): the fixed nav once the page scrolls past 8px.
 - **Teal hover glow** (`box-shadow: 0 12px 28px -10px rgba(94,196,182,0.55)`): primary button hover.
 - **Focus halo** (`box-shadow: 0 0 0 6px rgba(94,196,182,0.22)`): buttons on focus-visible, alongside the 2px outline.
@@ -276,7 +275,7 @@ FAQ accordions run on hairline rows with a muted caret that turns deep teal on h
 A ruled table with uppercase label heads; the next due row is tinted deep teal at 7%, and a live notice above it names the next date.
 
 ### Hero File Stack (signature moment)
-The home hero's right column is a WebGL scene (react-three-fiber): five sheets (Form 3CD, GSTR-3B, AIS, Form 16, ITR), each named on a stepped divider tab, settle into a slate folder labelled "Your file". The stack tilts with the pointer and turns with scroll, and stops rendering when the hero is offscreen. It loads only on desktop with a fine pointer, motion allowed and WebGL2 available, after fonts are ready, and crossfades over the still over 700ms. Everywhere else the still image of the same pose is shown. The portrait card sits at the stage's top left with a 6px cream border, tilted -2.5deg, over an ICAI membership badge.
+The home hero's right column is a WebGL scene (react-three-fiber): five sheets (Form 3CD, GSTR-3B, AIS, Form 16, ITR), each named on a stepped divider tab, settle into a slate folder labelled "Your file". The stack tilts with the pointer and turns with scroll, and stops rendering when the hero is offscreen. It loads only on desktop with a fine pointer, motion allowed and WebGL2 available, after fonts are ready, and crossfades over the still over 700ms. Everywhere else the still image of the same pose is shown. The hero carries no portrait or lede (removed at client request, Oct 2026); the portrait lives on About.
 
 ### Motion Grammar
 - **Page crossfade:** each navigation remounts the template, fading in and rising 10px over 520ms on expo-out (cubic-bezier(0.16, 1, 0.3, 1)), with backwards fill so no transform lingers afterward.
@@ -310,5 +309,5 @@ Every shipping raster carries its provenance inside the file.
 - **Don't** number sections; ordinals belong only to genuinely ordered process steps.
 - **Don't** build icon-tile card grids or use stock CA imagery.
 - **Don't** use teal as decoration, a band background, or a second emphasis word in a headline.
-- **Don't** shadow ledger rows or sections; only lifted objects (slip, card, portrait, scrolled nav, menus) get shadows.
+- **Don't** shadow ledger rows or sections; only lifted objects (slip, card, scrolled nav, menus) get shadows.
 - **Don't** add a second WebGL or scroll-driven scene, or run the file stack on touch, reduced motion or without WebGL2.
