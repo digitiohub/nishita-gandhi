@@ -1,0 +1,1351 @@
+{
+  "steps": [
+    {
+      "title": "You tell us what's going on.",
+      "body": "A short call or email: what you need, what's already been filed, and what the deadline is."
+    },
+    {
+      "title": "You get a checklist.",
+      "body": "One specific list of documents for your case – nothing generic, nothing you don't need."
+    },
+    {
+      "title": "We do the working.",
+      "body": "Records are reviewed, figures are matched with government portals, and the return, report or reply is prepared."
+    },
+    {
+      "title": "You see it before it's filed.",
+      "body": "The draft is walked through with you, in plain language, before anything is signed or submitted."
+    },
+    {
+      "title": "We file and send you proof.",
+      "body": "Acknowledgements and final copies come to you the same day."
+    },
+    {
+      "title": "We stay on it.",
+      "body": "Processing, intimations and any follow-up from the department are tracked until the matter is closed."
+    }
+  ],
+  "services": [
+    {
+      "slug": "income-tax-return-filing",
+      "name": "Income Tax Returns & Tax Planning",
+      "group": "Income Tax",
+      "heading": "Income Tax Return Filing and Tax Planning in Mulund, Mumbai",
+      "summary": "A return that matches what the department already knows about you – and that you understand before it's signed.",
+      "intro": [
+        "The Income Tax Department now sees most of your financial life before you file: salary, interest, dividends, share trades, property purchases, high-value spending. A return that doesn't match that data is the most common reason people get notices. So every return we prepare starts with your Annual Information Statement (AIS) and Form 26AS, and ends only when the numbers agree – or the difference is explained.",
+        "Two laws, one transition. Income earned up to 31 March 2026 is still taxed under the Income-tax Act, 1961. Income from 1 April 2026 falls under the Income-tax Act, 2025, which replaces 'assessment year' and 'previous year' with a single 'tax year'. Your filings and your planning are handled under the right law for each year."
+      ],
+      "who": [
+        "Salaried employees – including multiple employers, ESOPs, RSUs and foreign salary",
+        "Doctors, architects, consultants, freelancers and other professionals",
+        "Proprietors and traders, on regular or presumptive taxation",
+        "Investors with shares, mutual funds, F&O, property or crypto",
+        "Hindu Undivided Families (HUFs)",
+        "Partnership firms and LLPs",
+        "Senior citizens and retired individuals"
+      ],
+      "covered": [
+        {
+          "title": "The right form, every head of income",
+          "body": "Salary, house property, business or profession, capital gains and other sources – reported on the correct ITR form, with exempt income and asset disclosures where the law asks for them."
+        },
+        {
+          "title": "AIS and Form 26AS reconciliation",
+          "body": "Every TDS entry, interest credit, dividend and securities transaction is matched before filing. Where the AIS itself is wrong, feedback is filed with the department so the error doesn't follow you."
+        },
+        {
+          "title": "Old regime or new – worked out, not guessed",
+          "body": "Your tax is calculated both ways using your actual deductions. The new regime is the default; switching has conditions and deadlines, especially if you have business income."
+        },
+        {
+          "title": "Capital gains done properly",
+          "body": "Shares, mutual funds, ESOPs, property and other assets. Holding periods, cost, grandfathering, set-off of losses, and the exemptions available when you reinvest in a house or specified bonds."
+        },
+        {
+          "title": "Advance tax, without the interest",
+          "body": "Your income is estimated during the year and instalments are worked out quarter by quarter – so you don't pay interest for paying late or too little."
+        },
+        {
+          "title": "Planning that holds up",
+          "body": "Deductions, salary structure, timing of investments and asset sales, and HUF planning – each suggestion explained, documented and within the law."
+        },
+        {
+          "title": "Fixing what's already filed",
+          "body": "Revised, belated and updated returns when something was missed or wrong, with the additional tax worked out up front."
+        },
+        {
+          "title": "Refunds and intimations",
+          "body": "Processing is tracked, the intimation is checked line by line, and rectification is filed if the department's computation is off."
+        },
+        {
+          "title": "Foreign income and assets",
+          "body": "Foreign bank accounts, shares, RSUs and property disclosed correctly, and credit claimed for tax already paid abroad."
+        }
+      ],
+      "deliverables": [
+        "Filed return and acknowledgement",
+        "Computation of income, explained",
+        "Regime comparison (where relevant)",
+        "Advance tax schedule for the next year",
+        "A note of anything to keep in mind for next year"
+      ],
+      "documents": [
+        "PAN and Aadhaar",
+        "Form 16 / 16A and other TDS certificates",
+        "Bank statements and interest certificates",
+        "Capital gains statements from your broker and mutual fund registrars",
+        "Rent receipts and home loan interest certificate",
+        "Investment and insurance proofs (old regime)",
+        "Property purchase and sale documents",
+        "Last year's return and computation",
+        "Foreign income and asset details, if any"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "When is the income tax return due?",
+          "a": "If your accounts don't need an audit, the due date has generally been 31 July after the financial year ends. Audit cases have later dates. The government notifies – and sometimes extends – these dates, so the applicable date is confirmed each year."
+        },
+        {
+          "q": "My income is below the taxable limit. Should I still file?",
+          "a": "Usually, yes. Filing lets you claim TDS refunds, carry forward losses, and keep a record that banks and embassies ask for. In some cases – large deposits, high foreign travel spend, large electricity bills – filing is compulsory regardless of income."
+        },
+        {
+          "q": "What happens if my return doesn't match my AIS?",
+          "a": "The return may be processed with an adjustment, or you may get a notice asking you to explain. That's why the AIS is reconciled before filing, not after."
+        },
+        {
+          "q": "I missed the due date. What now?",
+          "a": "A belated return can still be filed within the time the law allows, with a late fee and interest where applicable. Some benefits, like carrying forward certain losses, may be lost. After that, an updated return may be possible, with additional tax."
+        },
+        {
+          "q": "Which law applies to the return I'm filing now?",
+          "a": "Returns for income earned up to 31 March 2026 are filed under the 1961 Act. The first returns under the 2025 Act will be for tax year 2026-27 – income earned from 1 April 2026."
+        }
+      ],
+      "related": [
+        "Income Tax Notices & Appeals",
+        "Corporate Tax",
+        "NRI & International Taxation",
+        "TDS & TCS Compliance"
+      ],
+      "metaTitle": "ITR Filing & Tax Planning in Mulund | CA Nishita Gandhi",
+      "metaDescription": "Income tax return filing and tax planning in Mulund, Mumbai for salaried, professionals, investors, HUFs and firms. AIS reconciliation and capital gains."
+    },
+    {
+      "slug": "corporate-tax",
+      "name": "Corporate Tax",
+      "group": "Income Tax",
+      "heading": "Corporate Tax Advisory and Compliance for Companies in Mumbai",
+      "summary": "Company tax returns, advance tax and tax positions – prepared by someone who also understands the accounts behind them.",
+      "intro": [
+        "A company's tax return is only as sound as the books and judgement behind it. Depreciation, disallowances, deferred tax, the choice of tax regime, and the timing of advance tax all flow from decisions made months earlier. Nishita has prepared and reviewed company tax returns, computations and tax planning for private and public companies for over a decade, and works with your finance team from the first advance tax instalment to the final return.",
+        "Company tax under the Income-tax Act, 1961 applies to income up to FY 2025-26. From tax year 2026-27, the Income-tax Act, 2025 applies – including renumbered provisions for the concessional company tax regime. Computations are prepared under the law that governs each year."
+      ],
+      "who": [
+        "Private limited companies",
+        "Unlisted public companies",
+        "Startups moving from losses to taxable profit",
+        "Companies evaluating the concessional tax regime",
+        "Group companies with inter-company transactions"
+      ],
+      "covered": [
+        {
+          "title": "Company income tax return",
+          "body": "Preparation and filing of the company return, with a full computation of income reconciled to the audited financial statements."
+        },
+        {
+          "title": "Tax regime evaluation",
+          "body": "Comparison of the normal regime with the concessional corporate tax regime, including the effect on MAT credit, deductions and incentives – before the option is exercised."
+        },
+        {
+          "title": "Advance tax",
+          "body": "Quarterly estimates of taxable profit and advance tax instalments, revisited as the year's numbers firm up."
+        },
+        {
+          "title": "Tax provisioning and deferred tax",
+          "body": "Current tax and deferred tax workings for the financial statements, under Accounting Standards or Ind AS."
+        },
+        {
+          "title": "Tax planning",
+          "body": "Review of business structure, expenditure, depreciation and timing decisions – with the reasoning documented in case it's ever questioned."
+        },
+        {
+          "title": "Process improvement",
+          "body": "Practical changes to how tax data is captured during the year, so year-end isn't a scramble and the return is easier to defend."
+        },
+        {
+          "title": "Coordination with auditors",
+          "body": "Working with your statutory and tax auditors so the tax audit report, financial statements and return tell the same story."
+        }
+      ],
+      "deliverables": [
+        "Filed company return and computation",
+        "Regime comparison note",
+        "Quarterly advance tax workings",
+        "Tax provision and deferred tax schedules",
+        "Issues list for the next year"
+      ],
+      "documents": [
+        "Audited financial statements and trial balance",
+        "Previous year's return and computation",
+        "Fixed asset register",
+        "Tax audit report",
+        "Details of related party transactions",
+        "Advance tax and TDS credit details"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "When is a company's income tax return due?",
+          "a": "Companies require an audit, so the return has generally been due by 31 October after the year ends, and later where transfer pricing applies. Dates are notified each year and are confirmed for you."
+        },
+        {
+          "q": "Should our company opt for the concessional tax regime?",
+          "a": "It depends on the deductions and incentives you currently claim, any MAT credit you hold, and your plans. The option is generally irreversible once exercised, so it's worth a numbers-based comparison first."
+        },
+        {
+          "q": "Can you work alongside our in-house accounts team?",
+          "a": "Yes. Most companies keep their books in-house; the tax workings, reviews and filings are handled with your team, not instead of it."
+        }
+      ],
+      "related": [
+        "Tax Audit",
+        "Statutory Audit",
+        "Income Tax Notices & Appeals",
+        "TDS & TCS Compliance"
+      ],
+      "metaTitle": "Corporate Tax Consultant in Mumbai | CA Nishita Gandhi",
+      "metaDescription": "Company income tax returns, tax regime evaluation, advance tax, tax provisioning and corporate tax planning for companies in Mulund and Mumbai."
+    },
+    {
+      "slug": "income-tax-notice-assessment-appeals",
+      "name": "Income Tax Notices & Appeals",
+      "group": "Income Tax",
+      "heading": "Income Tax Notice Replies, Assessments and Appeals in Mumbai",
+      "summary": "A notice is a question. It deserves a precise, documented answer – before the deadline, not on it.",
+      "intro": [
+        "Most income tax notices are now issued online, many under faceless assessment, and each one has its own purpose, format and time limit. The first job is to read the notice carefully and work out exactly what is being asked – no more, no less. Then the evidence is gathered, the reply is drafted and filed on the portal, and the matter is followed through. Nishita has handled assessment proceedings before both income tax and GST authorities for clients across industries.",
+        "Proceedings for years up to FY 2025-26 generally continue under the Income-tax Act, 1961, even if the notice arrives after 1 April 2026. From tax year 2026-27, the Income-tax Act, 2025 applies. The governing law and section are confirmed before any reply is drafted."
+      ],
+      "who": [
+        "Individuals with an intimation, mismatch notice or demand",
+        "Businesses and professionals selected for scrutiny",
+        "Taxpayers facing reassessment of earlier years",
+        "Anyone whose refund is held or adjusted against an old demand",
+        "Companies, LLPs and firms in assessment or appeal"
+      ],
+      "covered": [
+        {
+          "title": "Intimations after processing",
+          "body": "Adjustments and demands raised while processing your return are checked, and rectification is filed where the computation is wrong."
+        },
+        {
+          "title": "Defective return notices",
+          "body": "The defect is identified and a corrected return is filed within the time allowed."
+        },
+        {
+          "title": "AIS mismatch and non-filing notices",
+          "body": "Replies to e-campaigns and notices triggered by cash deposits, property deals, share trades and other high-value transactions."
+        },
+        {
+          "title": "Scrutiny assessments",
+          "body": "Written submissions, document compilation and query-by-query responses in limited or complete scrutiny, including video-conference hearings."
+        },
+        {
+          "title": "Reassessment",
+          "body": "Review of the information the department relies on, reply to the show-cause notice, and submissions through the reassessment."
+        },
+        {
+          "title": "Penalty proceedings",
+          "body": "Replies showing why a penalty should not be levied, and applications for immunity where the law allows."
+        },
+        {
+          "title": "Demands and refund adjustments",
+          "body": "Old demands verified on the portal, responses to proposed refund adjustments, and stay applications while an appeal is pending."
+        },
+        {
+          "title": "Appeals",
+          "body": "Grounds of appeal, statement of facts and written submissions before the first appellate authority, and appeal papers for the Income Tax Appellate Tribunal."
+        }
+      ],
+      "deliverables": [
+        "Notice summary: what's being asked and by when",
+        "Document list",
+        "Drafted reply, reviewed with you before filing",
+        "Filing acknowledgement",
+        "Status updates until the matter closes"
+      ],
+      "documents": [
+        "The notice or order",
+        "Income tax portal access, or downloaded copies",
+        "Return and computation for the year in question",
+        "Books, bank statements and documents relating to the issue raised",
+        "Any earlier correspondence with the department"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "I've received an income tax notice. What should I do first?",
+          "a": "Don't ignore it. Check it's genuine using 'Authenticate notice/order' on the income tax portal, note the response date, and share it as early as possible so there's time to gather documents properly."
+        },
+        {
+          "q": "Can I get more time to reply?",
+          "a": "An adjournment can be requested online with reasons, but it's at the officer's discretion. It should be asked for well before the due date and never relied on."
+        },
+        {
+          "q": "Will I have to visit the income tax office?",
+          "a": "Usually not. Faceless proceedings run entirely online, and personal hearings, where allowed, are by video conference."
+        },
+        {
+          "q": "What if I disagree with the assessment order?",
+          "a": "An appeal can be filed within the time the law allows – on time is critical. A stay of demand can also be requested while the appeal is pending, subject to conditions."
+        }
+      ],
+      "related": [
+        "Income Tax Returns & Tax Planning",
+        "Corporate Tax",
+        "GST Advisory, Notices & Refunds"
+      ],
+      "metaTitle": "Income Tax Notice Reply & Appeals in Mumbai | CA in Mulund",
+      "metaDescription": "Replies to income tax notices, scrutiny, reassessment, rectification, penalty and appeals before CIT(A) and ITAT. CA Nishita Gandhi, Mulund, Mumbai."
+    },
+    {
+      "slug": "tds-tcs-compliance",
+      "name": "TDS & TCS Compliance",
+      "group": "Income Tax",
+      "heading": "TDS and TCS Compliance and Return Filing in Mumbai",
+      "summary": "Deduct right, deposit on time, file clean – so neither you nor the people you pay get a surprise later.",
+      "intro": [
+        "TDS is your responsibility as the payer, and mistakes don't stay small. A wrong rate, a late deposit or an incorrect PAN turns into a default notice months later – with interest and late fees – and the person you paid may not get credit for the tax. Salary and non-salary TDS, quarterly returns and certificates are handled end to end, and existing defaults are cleaned up.",
+        "TDS and TCS on payments from 1 April 2026 fall under the Income-tax Act, 2025, with new section numbers and form names. Earlier periods remain under the 1961 Act. Each payment is mapped to the provision that applies."
+      ],
+      "who": [
+        "Businesses paying contractors, professionals, landlords and employees",
+        "Employers deducting tax on salary",
+        "Buyers of property, including from NRI sellers",
+        "Businesses making payments to non-residents",
+        "Sellers required to collect tax at source"
+      ],
+      "covered": [
+        {
+          "title": "TAN registration",
+          "body": "For new businesses, and for individuals buying property from a non-resident."
+        },
+        {
+          "title": "Rates and sections",
+          "body": "Each type of payment – salary, contracts, professional fees, commission, rent, interest, purchases, property, non-resident payments – mapped to the correct rate and threshold."
+        },
+        {
+          "title": "Monthly deposits",
+          "body": "Tax worked out and paid by challan within due dates."
+        },
+        {
+          "title": "Quarterly returns",
+          "body": "Salary, non-salary, non-resident and TCS returns, with PANs validated before filing."
+        },
+        {
+          "title": "TDS certificates",
+          "body": "Generated and issued to employees and vendors on time."
+        },
+        {
+          "title": "Corrections",
+          "body": "PAN errors, challan mismatches and short deductions fixed through correction statements."
+        },
+        {
+          "title": "Default notices",
+          "body": "Short payment, short deduction, interest and late fee demands analysed and resolved."
+        },
+        {
+          "title": "Lower deduction certificates",
+          "body": "Applications where the recipient's actual tax liability is lower than the standard rate."
+        },
+        {
+          "title": "TDS on property purchase",
+          "body": "Computation, payment and certificate – for resident and non-resident sellers."
+        }
+      ],
+      "deliverables": [
+        "Monthly TDS computation and challans",
+        "Filed quarterly returns",
+        "TDS certificates for employees and vendors",
+        "Default report with corrective action"
+      ],
+      "documents": [
+        "TAN and PAN",
+        "Monthly payment details",
+        "PANs of all payees",
+        "Challans already paid",
+        "Lower deduction certificates received",
+        "Salary register"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "When does TDS have to be deposited?",
+          "a": "Tax deducted in a month has generally been due by the 7th of the next month, with more time for March. Due dates are set by the rules and confirmed for your payments."
+        },
+        {
+          "q": "What if TDS was deducted but deposited late?",
+          "a": "Interest is payable for the delay, and late returns attract a late fee. Continued default can lead to penalty. Depositing on time avoids all three."
+        },
+        {
+          "q": "I'm buying a flat from an NRI. What do I need to do?",
+          "a": "TDS on purchase from a non-resident is worked out differently and is usually higher, unless the seller has a lower deduction certificate. You'll also need a TAN. The computation, payment and certificate are handled for you."
+        }
+      ],
+      "related": [
+        "Accounting, Finalisation & Payroll",
+        "Income Tax Returns & Tax Planning",
+        "NRI & International Taxation"
+      ],
+      "metaTitle": "TDS & TCS Return Filing and Compliance | CA in Mumbai",
+      "metaDescription": "TDS and TCS compliance in Mumbai: TAN, monthly deposits, quarterly returns, certificates, corrections, default notices and lower deduction certificates."
+    },
+    {
+      "slug": "nri-international-taxation",
+      "name": "NRI & International Taxation",
+      "group": "Income Tax",
+      "heading": "NRI and International Taxation Services in Mumbai",
+      "summary": "Indian tax for people and businesses with one foot abroad – returns, treaty relief, remittances and property sales.",
+      "intro": [
+        "Money crossing a border is taxed by two countries and watched by two sets of regulators. For NRIs, that means Indian tax on rent, interest, investments and property sales, with TDS rates that are often higher than the tax actually due. For Indian businesses, it means tax on payments to non-residents and the certificates banks need before they'll remit. Both are handled here – mostly online, so distance isn't a problem.",
+        "Residential status is decided afresh every year, based on days in India and other conditions. It determines what is taxable in India, so it's always worked out first."
+      ],
+      "who": [
+        "NRIs with rent, NRO interest or investments in India",
+        "NRIs selling property or shares in India",
+        "Indians moving abroad, or returning home",
+        "Residents with foreign income or assets",
+        "Indian businesses paying foreign vendors, consultants or group companies"
+      ],
+      "covered": [
+        {
+          "title": "Residential status",
+          "body": "Days of stay, employment abroad and income thresholds analysed to decide whether you are Resident, RNOR or Non-Resident for the year."
+        },
+        {
+          "title": "NRI income tax returns",
+          "body": "Rent, NRO interest, dividends and capital gains reported, and excess TDS claimed back as a refund."
+        },
+        {
+          "title": "Treaty (DTAA) relief",
+          "body": "The tax treaty between India and your country of residence applied, with the Tax Residency Certificate and Form 10F in place, to avoid being taxed twice."
+        },
+        {
+          "title": "Selling property in India",
+          "body": "Capital gains worked out, a lower TDS certificate applied for before the sale, reinvestment options reviewed, and excess TDS refunded through the return."
+        },
+        {
+          "title": "Form 15CA / 15CB",
+          "body": "The chartered accountant certificate and online forms needed to send money abroad, with the taxability of each remittance determined."
+        },
+        {
+          "title": "Payments to non-residents",
+          "body": "TDS on fees, royalties, interest and other payments by Indian businesses to foreign parties, applying treaty rates where available."
+        },
+        {
+          "title": "Repatriation",
+          "body": "Remitting NRO balances within FEMA limits, with the documents banks ask for."
+        },
+        {
+          "title": "Moving back to India",
+          "body": "Planning around RNOR status, foreign income and assets after return, and NRE/FCNR account conversion."
+        },
+        {
+          "title": "Foreign assets for residents",
+          "body": "Foreign accounts, shares, RSUs and property disclosed correctly, and foreign tax credit claimed."
+        }
+      ],
+      "deliverables": [
+        "Residential status note",
+        "Filed return and refund tracking",
+        "Lower TDS certificate (property sales)",
+        "Form 15CB certificate with UDIN",
+        "Remittance checklist for your bank"
+      ],
+      "documents": [
+        "Passport pages with travel dates",
+        "PAN",
+        "NRO/NRE bank statements",
+        "Rent agreements and property documents",
+        "Sale deed and purchase cost (for property sales)",
+        "Tax Residency Certificate",
+        "Invoices and agreements (for business remittances)"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "Does an NRI have to file a return in India?",
+          "a": "Yes, if taxable Indian income is above the basic exemption limit. It's also worth filing to claim back excess TDS – which is common on property sales and interest."
+        },
+        {
+          "q": "Why is the TDS on my property sale so high? Can it be reduced?",
+          "a": "TDS on payments to non-residents is deducted on the sale price at higher rates, unless the buyer receives a lower deduction certificate. That certificate can be applied for before the sale, based on your actual gain."
+        },
+        {
+          "q": "Can everything be done while I'm abroad?",
+          "a": "Yes. Returns, certificates and department responses are all online. Documents are shared electronically and calls are scheduled across time zones."
+        },
+        {
+          "q": "Our company is paying a foreign consultant. What do we need?",
+          "a": "The taxability of the payment has to be determined, TDS deducted at the right rate (treaty or domestic), and Form 15CA/15CB filed before the bank remits."
+        }
+      ],
+      "related": [
+        "Income Tax Returns & Tax Planning",
+        "TDS & TCS Compliance",
+        "CA Certificates"
+      ],
+      "metaTitle": "NRI & International Tax Consultant in Mumbai | 15CB, DTAA",
+      "metaDescription": "NRI tax returns, property sale TDS, lower deduction certificates, DTAA relief, Form 15CA/15CB and payments to non-residents. CA Nishita Gandhi, Mumbai."
+    },
+    {
+      "slug": "gst-registration-return-filing",
+      "name": "GST Registration & Returns",
+      "group": "GST",
+      "heading": "GST Registration and Return Filing in Mulund, Mumbai",
+      "summary": "Registered on time, filed every period, reconciled every month – so your input tax credit is actually there when you need it.",
+      "intro": [
+        "GST doesn't pause. Returns are filed in sequence, a missed one blocks the next, and input tax credit only counts if your suppliers report it too. Registration, monthly and quarterly returns and reconciliation are handled for businesses in Mulund and across Mumbai – so your returns, your books and your suppliers' data agree.",
+        "GST rates were rationalised from 22 September 2025. Invoices and returns are checked against the rate in force for each supply."
+      ],
+      "who": [
+        "New businesses and freelancers crossing the registration threshold",
+        "Traders, manufacturers and service providers",
+        "E-commerce sellers and exporters",
+        "Businesses moving between composition and regular schemes",
+        "Businesses closing or changing their constitution"
+      ],
+      "covered": [
+        {
+          "title": "Do you need to register?",
+          "body": "Turnover thresholds (generally ₹40 lakh for goods and ₹20 lakh for services in Maharashtra) and the cases where registration is compulsory regardless – inter-state supply of goods, e-commerce sales, casual taxable persons."
+        },
+        {
+          "title": "New registration",
+          "body": "Application, documents, replies to clarification notices and follow-up until the certificate is issued."
+        },
+        {
+          "title": "Amendments",
+          "body": "Changes to address, business details, partners or directors, and additional places of business."
+        },
+        {
+          "title": "Composition or regular?",
+          "body": "A side-by-side comparison for eligible businesses, and switching at the right time."
+        },
+        {
+          "title": "Monthly and quarterly returns",
+          "body": "GSTR-1 and GSTR-3B, including the QRMP scheme where it suits you."
+        },
+        {
+          "title": "Input tax credit reconciliation",
+          "body": "Purchases matched with GSTR-2B and the Invoice Management System; missing supplier invoices chased; reversals made where required."
+        },
+        {
+          "title": "E-invoicing and e-way bills",
+          "body": "Applicability checked, e-invoicing set up, and e-way bill compliance for goods in transit."
+        },
+        {
+          "title": "Letter of Undertaking",
+          "body": "Annual LUT so exporters can supply without paying IGST."
+        },
+        {
+          "title": "Annual return",
+          "body": "GSTR-9 and, where applicable, GSTR-9C – reconciled with your audited accounts."
+        },
+        {
+          "title": "Cancellation",
+          "body": "Closing a registration properly, revoking a cancelled one, and filing the final return."
+        }
+      ],
+      "deliverables": [
+        "Registration certificate",
+        "Monthly/quarterly filing acknowledgements",
+        "ITC reconciliation report with supplier follow-up list",
+        "Annual return and reconciliation"
+      ],
+      "documents": [
+        "PAN of the business and its owners/partners/directors",
+        "Aadhaar and photographs of the authorised signatory",
+        "Proof of business premises (electricity bill, rent agreement, NOC)",
+        "Bank account proof",
+        "Partnership deed or incorporation documents",
+        "Sales and purchase registers (for returns)"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "When is GST registration compulsory?",
+          "a": "When aggregate turnover crosses the threshold for your state and type of supply – and in some cases regardless of turnover, such as inter-state supply of goods, sales through e-commerce operators and casual taxable persons."
+        },
+        {
+          "q": "I'm a freelancer working for foreign clients. Do I need GST?",
+          "a": "Once your aggregate turnover crosses the threshold, yes. Exports can then be made without paying IGST under a Letter of Undertaking."
+        },
+        {
+          "q": "What happens if I miss a GST return?",
+          "a": "Late fee and interest apply, and later returns are blocked until it's filed. Prolonged non-filing can lead to cancellation – and your customers may lose their input tax credit."
+        },
+        {
+          "q": "How long does registration take?",
+          "a": "With a complete application, registration is usually granted within the time the law prescribes. Physical verification or a clarification notice can add time."
+        }
+      ],
+      "related": [
+        "GST Advisory, Notices & Refunds",
+        "Accounting, Finalisation & Payroll",
+        "Business Setup & Registrations"
+      ],
+      "metaTitle": "GST Registration & Returns in Mulund | CA Nishita Gandhi",
+      "metaDescription": "GST registration, GSTR-1, GSTR-3B, ITC reconciliation, e-invoicing, LUT and GSTR-9/9C annual returns for businesses in Mulund and Mumbai."
+    },
+    {
+      "slug": "gst-advisory-notices-refunds",
+      "name": "GST Advisory, Notices & Refunds",
+      "group": "GST",
+      "heading": "GST Advisory, Notice Replies, Assessments and Refunds in Mumbai",
+      "summary": "The right GST position before you transact – and a documented defence if it's ever questioned.",
+      "intro": [
+        "Classification, place of supply, credit eligibility, valuation: GST questions are least costly to answer before a contract is signed and most expensive after a notice arrives. Positions are advised on in advance, past compliance is reviewed, and notices and assessments are responded to with full reconciliations. Nishita has attended GST assessment proceedings before the revenue authorities and handles refund claims for exporters and businesses with blocked credit."
+      ],
+      "who": [
+        "Businesses with a scrutiny notice, audit intimation or show-cause notice",
+        "Exporters with refunds due",
+        "Businesses with credit stuck due to an inverted duty structure",
+        "Businesses launching new products, contracts or business models"
+      ],
+      "covered": [
+        {
+          "title": "Advance advice",
+          "body": "Opinions on classification and rate, place of supply, time and value of supply, reverse charge and credit eligibility – before you commit."
+        },
+        {
+          "title": "GST health check",
+          "body": "Past returns, books and credit claims reviewed to find exposure before the department does, with a plan to fix it."
+        },
+        {
+          "title": "Scrutiny of returns",
+          "body": "Reconciliations and replies to discrepancy notices."
+        },
+        {
+          "title": "Departmental audits",
+          "body": "Records, reconciliations and replies prepared for GST audit."
+        },
+        {
+          "title": "Show-cause notices and assessments",
+          "body": "Replies drafted, evidence compiled, and personal hearings attended."
+        },
+        {
+          "title": "Appeals",
+          "body": "First appeals before the Appellate Authority, and support for appeals before the GST Appellate Tribunal."
+        },
+        {
+          "title": "Refunds",
+          "body": "Exports with or without payment of tax, accumulated credit from inverted duty structure, and excess cash ledger balance."
+        },
+        {
+          "title": "Suspension or cancellation",
+          "body": "Replies to proposed cancellation and applications for revocation."
+        }
+      ],
+      "deliverables": [
+        "Written opinion or health-check report",
+        "Reconciliation workings",
+        "Filed reply / appeal",
+        "Refund application and tracking"
+      ],
+      "documents": [
+        "The notice or audit intimation",
+        "GST returns for the period",
+        "Sales and purchase registers and invoices",
+        "Books of account and financial statements",
+        "Shipping bills and FIRC/BRC (for export refunds)"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "How long do I have to reply to a GST notice?",
+          "a": "The time is stated in the notice and is often 30 days or less. Extensions are discretionary, so the reply should start the day the notice arrives."
+        },
+        {
+          "q": "How long does a GST refund take?",
+          "a": "The law sets timelines once a complete application is filed. Most delays come from deficiency memos, so claims are filed complete, with full documentation, the first time."
+        },
+        {
+          "q": "Can you look at a contract before we sign it?",
+          "a": "Yes – who bears the GST, place of supply and credit eligibility are far easier to settle in a contract than in a dispute."
+        }
+      ],
+      "related": [
+        "GST Registration & Returns",
+        "Income Tax Notices & Appeals",
+        "Accounting, Finalisation & Payroll"
+      ],
+      "metaTitle": "GST Notice Reply, Appeals & Refunds | CA in Mumbai",
+      "metaDescription": "GST advisory, health checks, replies to scrutiny and show-cause notices, assessments, audits, appeals and export or inverted duty refunds. Mulund, Mumbai."
+    },
+    {
+      "slug": "statutory-audit",
+      "name": "Statutory Audit",
+      "group": "Audit & Assurance",
+      "heading": "Statutory Audit of Companies and LLPs in Mumbai",
+      "summary": "An independent audit, carried out to ICAI's Standards on Auditing, with findings your board and bankers can act on.",
+      "intro": [
+        "Every company must have its accounts audited every year – whatever its size, even if it did no business. LLPs need an audit once turnover or contribution crosses the prescribed limits. Nishita has signed statutory audits for over a decade: planning around the real risks in your business, testing what matters, and reporting under the Accounting Standards or Ind AS, CARO 2020 and internal financial controls where they apply. The audit is timed so your tax audit, income tax return and annual ROC filings can all be completed on schedule.",
+        "Independence: where we are a company's statutory auditor, we don't also keep its books – as required by the Companies Act, 2013 and the ICAI Code of Ethics."
+      ],
+      "who": [
+        "Private limited and one person companies",
+        "Unlisted public companies",
+        "LLPs with turnover above ₹40 lakh or contribution above ₹25 lakh",
+        "Section 8 companies",
+        "Companies needing audited accounts for banks, investors or tenders"
+      ],
+      "covered": [
+        {
+          "title": "Planning and risk assessment",
+          "body": "Understanding the business and focusing audit effort where misstatement is most likely."
+        },
+        {
+          "title": "Testing the numbers",
+          "body": "Revenue, expenses, receivables, payables, bank, borrowings and related party transactions."
+        },
+        {
+          "title": "Inventory and fixed assets",
+          "body": "Attendance at stock counts where relevant; verification of assets and depreciation."
+        },
+        {
+          "title": "Accounting framework",
+          "body": "Compliance with Accounting Standards or Ind AS, and Schedule III presentation, including notes to accounts."
+        },
+        {
+          "title": "CARO 2020",
+          "body": "Reporting under the Companies (Auditor's Report) Order where applicable."
+        },
+        {
+          "title": "Internal financial controls",
+          "body": "Reporting on controls over financial reporting where required."
+        },
+        {
+          "title": "Report and management letter",
+          "body": "The independent auditor's report – plus a separate letter to management on control gaps and practical fixes."
+        }
+      ],
+      "deliverables": [
+        "Audit plan and document request",
+        "Independent auditor's report (with UDIN)",
+        "CARO and IFC reports where applicable",
+        "Management letter",
+        "Timeline aligned to tax audit and ROC due dates"
+      ],
+      "documents": [
+        "Trial balance and books of account",
+        "Bank statements and confirmations",
+        "Fixed asset register",
+        "Inventory records",
+        "Loan agreements and sanction letters",
+        "Board and shareholder minutes",
+        "Last year's audited financial statements"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "Does a company with no business still need an audit?",
+          "a": "Yes. Every company must have its accounts audited and file its financial statements and annual return with the Registrar, even with no transactions."
+        },
+        {
+          "q": "When should the audit be finished?",
+          "a": "Audited accounts must be placed before the AGM, ordinarily held within six months of the year end. Planning starts well before that."
+        },
+        {
+          "q": "How is the auditor appointed?",
+          "a": "The first auditor is appointed by the Board within 30 days of incorporation. After that, shareholders appoint the auditor at the AGM – generally for five years – and the appointment is filed with the Registrar."
+        },
+        {
+          "q": "We're moving to Ind AS. Can you help?",
+          "a": "Audits are carried out under both Accounting Standards and Ind AS, including the additional disclosures and notes Ind AS requires."
+        }
+      ],
+      "related": [
+        "Tax Audit",
+        "ROC / MCA Compliance",
+        "Internal Audit & Stock Audit",
+        "Corporate Tax"
+      ],
+      "metaTitle": "Statutory Audit of Companies & LLPs in Mumbai | CA",
+      "metaDescription": "Statutory audit of private companies, OPCs and LLPs under the Companies Act, 2013 and Standards on Auditing. Ind AS, CARO and IFC. Mulund, Mumbai."
+    },
+    {
+      "slug": "tax-audit",
+      "name": "Tax Audit",
+      "group": "Audit & Assurance",
+      "heading": "Tax Audit Services in Mulund, Mumbai",
+      "summary": "Every clause checked against your books – and the return filed on time after it.",
+      "intro": [
+        "Once turnover or receipts cross the limits in the Income-tax Act, your accounts must be audited and dozens of particulars reported – from your method of accounting and TDS compliance to disallowable expenses and payments to small suppliers. Nishita has independently handled tax audits for companies, firms and proprietors since qualifying. Books are reviewed before the audit starts, so issues are fixed rather than just reported.",
+        "Tax audit was under section 44AB of the 1961 Act; the corresponding provision in the Income-tax Act, 2025 is section 63. For FY 2025-26 the report is in Form 3CA/3CB with 3CD; from tax year 2026-27 a single Form 26 applies."
+      ],
+      "who": [
+        "Businesses with turnover above ₹1 crore (₹10 crore if cash receipts and payments are each within 5%)",
+        "Professionals with gross receipts above ₹50 lakh",
+        "Those opting out of presumptive taxation and declaring lower profit, subject to conditions",
+        "Proprietors, firms, LLPs, companies and HUFs meeting these conditions"
+      ],
+      "covered": [
+        {
+          "title": "Is an audit required?",
+          "body": "Turnover, cash transactions and presumptive taxation choices reviewed to confirm applicability."
+        },
+        {
+          "title": "Pre-audit review",
+          "body": "Gaps in records, reconciliations and classification found and fixed before the audit."
+        },
+        {
+          "title": "Clause-by-clause reporting",
+          "body": "TDS compliance, loans and deposits, disallowances, depreciation, GST reconciliation and every other particular – verified, not copied."
+        },
+        {
+          "title": "Payments to MSMEs",
+          "body": "Payments to micro and small suppliers beyond the allowed time identified, because they affect your deduction."
+        },
+        {
+          "title": "Filing",
+          "body": "Report uploaded on the portal and acceptance coordinated."
+        },
+        {
+          "title": "The return",
+          "body": "Income tax return filed by the due date, consistent with the audit report."
+        }
+      ],
+      "deliverables": [
+        "Pre-audit issues list",
+        "Tax audit report filed (with UDIN)",
+        "Income tax return filed",
+        "Points to fix in next year's books"
+      ],
+      "documents": [
+        "Books of account and trial balance",
+        "Bank statements",
+        "GST returns",
+        "TDS returns and challans",
+        "Fixed asset details",
+        "Loan and deposit confirmations",
+        "MSME supplier list with payment dates"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "When is the tax audit report due?",
+          "a": "One month before the return due date – in recent years, around 30 September. Dates can be notified or extended."
+        },
+        {
+          "q": "What if a required tax audit isn't done?",
+          "a": "A penalty linked to turnover can be levied, in addition to the consequences of an incomplete return."
+        },
+        {
+          "q": "Can our statutory auditor do the tax audit too?",
+          "a": "Yes. The statutory auditor of a company can also conduct its tax audit."
+        }
+      ],
+      "related": [
+        "Statutory Audit",
+        "Corporate Tax",
+        "Income Tax Returns & Tax Planning",
+        "Accounting, Finalisation & Payroll"
+      ],
+      "metaTitle": "Tax Audit Services in Mulund, Mumbai | CA Nishita Gandhi",
+      "metaDescription": "Tax audit under section 44AB (1961 Act) / section 63 (2025 Act) for businesses and professionals in Mulund and Mumbai. Form 3CD and Form 26 reporting."
+    },
+    {
+      "slug": "internal-audit-stock-audit",
+      "name": "Internal Audit & Stock Audit",
+      "group": "Audit & Assurance",
+      "heading": "Internal Audit, Stock Audit and Process Review in Mumbai",
+      "summary": "See how the business actually runs – and fix the gaps before they show up as losses or audit findings.",
+      "intro": [
+        "Internal audit looks at how money really moves through a business: how purchases get approved, how bills and sub-contractor work are verified, how stock is controlled and how payments are released. Nishita has run monthly internal audits, prepared statutory compliance reports, and drafted agenda papers for audit committees and boards. Every observation comes with a cause, a risk rating and a fix your team can actually implement.",
+        "Companies crossing the thresholds in section 138 of the Companies Act, 2013 must appoint an internal auditor. A company's statutory auditor cannot also be its internal auditor."
+      ],
+      "who": [
+        "Companies required to appoint an internal auditor",
+        "Growing businesses that want an independent look at their processes",
+        "Businesses with significant stock, sites or sub-contractors",
+        "Family businesses handing day-to-day control to managers"
+      ],
+      "covered": [
+        {
+          "title": "Risk-based audit plan",
+          "body": "High-risk areas identified and an annual or quarterly plan agreed with management."
+        },
+        {
+          "title": "Process audits",
+          "body": "Purchase-to-payment, order-to-cash, payroll, inventory and expenses."
+        },
+        {
+          "title": "Bill and contractor verification",
+          "body": "Purchase bills, cash vouchers and sub-contractor work checked against orders, measurements and approvals."
+        },
+        {
+          "title": "Receivables and payables",
+          "body": "Monthly review of debtor and creditor statements and ageing."
+        },
+        {
+          "title": "Stock verification",
+          "body": "Physical counts, valuation review and reconciliation with books – including slow-moving and obsolete stock."
+        },
+        {
+          "title": "Fixed asset verification",
+          "body": "Physical verification, tagging and reconciliation with the register."
+        },
+        {
+          "title": "Compliance reporting",
+          "body": "Monthly statutory compliance reports and agenda items for audit committee and board meetings."
+        },
+        {
+          "title": "SOPs and controls",
+          "body": "Controls and standard operating procedures documented, then tested to see if they work."
+        }
+      ],
+      "deliverables": [
+        "Annual audit plan",
+        "Monthly or quarterly internal audit reports",
+        "Statutory compliance report",
+        "Action tracker with follow-ups"
+      ],
+      "documents": [
+        "Organisation chart and approval matrix",
+        "Existing policies and SOPs",
+        "Books and ERP access",
+        "Stock and fixed asset registers",
+        "Previous audit reports"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "Which companies must have an internal auditor?",
+          "a": "Listed companies, and unlisted public and private companies above prescribed thresholds of turnover, borrowings, paid-up capital or deposits. Others often appoint one voluntarily."
+        },
+        {
+          "q": "How is internal audit different from statutory audit?",
+          "a": "Statutory audit gives shareholders an opinion on the financial statements. Internal audit works for management, on processes, controls and leakage."
+        }
+      ],
+      "related": [
+        "Statutory Audit",
+        "Accounting, Finalisation & Payroll",
+        "Project Finance & CMA Data"
+      ],
+      "metaTitle": "Internal Audit & Stock Audit in Mumbai | CA Nishita Gandhi",
+      "metaDescription": "Risk-based internal audit, bill and contractor verification, stock and fixed asset verification, compliance reports and SOPs for companies in Mumbai."
+    },
+    {
+      "slug": "business-setup-registrations",
+      "name": "Business Setup & Registrations",
+      "group": "Business & Corporate",
+      "heading": "Company Registration, LLP Registration and Business Setup in Mumbai",
+      "summary": "Pick the structure that fits your next five years – then get registered and ready to trade.",
+      "intro": [
+        "The structure you start with shapes your tax, your liability, your compliance load and how easily you can raise money or bring in partners. So the first conversation is about where the business is going. Then incorporation and every registration you need to start operating are handled for you."
+      ],
+      "who": [
+        "First-time founders",
+        "Proprietors moving to a company or LLP",
+        "Professionals forming a partnership or LLP",
+        "Families setting up a holding or investment entity"
+      ],
+      "covered": [
+        {
+          "title": "Choosing a structure",
+          "body": "Proprietorship, partnership, LLP, private limited company or one person company – compared on tax, liability, compliance and funding."
+        },
+        {
+          "title": "Private limited company and OPC",
+          "body": "Name reservation, incorporation, memorandum and articles, DINs, and PAN and TAN with incorporation."
+        },
+        {
+          "title": "LLP",
+          "body": "Name reservation, incorporation, and the LLP agreement drafted and filed."
+        },
+        {
+          "title": "Partnership firm",
+          "body": "Partnership deed drafted and registered with the Registrar of Firms, Maharashtra."
+        },
+        {
+          "title": "First-year compliance",
+          "body": "First board meeting, first auditor, share certificates, statutory registers and commencement of business."
+        },
+        {
+          "title": "Registrations",
+          "body": "GST, Udyam (MSME), Shop and Establishment (Maharashtra), Professional Tax, Import Export Code, digital signatures and LEI."
+        },
+        {
+          "title": "Startup recognition",
+          "body": "DPIIT startup recognition and guidance on the related tax exemption."
+        }
+      ],
+      "deliverables": [
+        "Structure recommendation note",
+        "Certificate of incorporation / registration",
+        "PAN, TAN and registrations",
+        "First-year compliance calendar"
+      ],
+      "documents": [
+        "PAN, Aadhaar and photographs of promoters",
+        "Address proof of promoters",
+        "Registered office proof and owner's NOC",
+        "Proposed names and business activity",
+        "Capital contribution details"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "LLP or private limited company?",
+          "a": "An LLP usually means lighter compliance and suits professional and closely held businesses. A private limited company suits founders planning to raise equity or issue ESOPs. The right answer depends on your plans."
+        },
+        {
+          "q": "How long does company registration take?",
+          "a": "With complete documents and an approved name, usually a couple of weeks, depending on processing by the Ministry of Corporate Affairs."
+        },
+        {
+          "q": "Is there a minimum capital requirement?",
+          "a": "Not at present for a private limited company or LLP. Capital is set by what the business actually needs."
+        }
+      ],
+      "related": [
+        "ROC / MCA Compliance",
+        "GST Registration & Returns",
+        "Accounting, Finalisation & Payroll"
+      ],
+      "metaTitle": "Company & LLP Registration in Mumbai | Business Setup Mulund",
+      "metaDescription": "Private limited, OPC, LLP and partnership registration, plus GST, Udyam, Shop Act, Professional Tax, IEC and startup recognition. Mulund, Mumbai."
+    },
+    {
+      "slug": "roc-mca-compliance",
+      "name": "ROC / MCA Compliance",
+      "group": "Business & Corporate",
+      "heading": "ROC and MCA Annual Compliance for Companies and LLPs",
+      "summary": "Every annual form and every event filing, on a calendar – so late fees and director disqualification never come up.",
+      "intro": [
+        "Companies and LLPs file annual returns and financial statements with the Registrar, and report many changes during the year. Late filings attract a fee for every day of delay, and prolonged default can disqualify directors. Each company or LLP gets its own compliance calendar, and every annual and event-based filing is handled against it."
+      ],
+      "who": [
+        "Private limited companies and OPCs",
+        "LLPs",
+        "Section 8 companies",
+        "Companies behind on past filings"
+      ],
+      "covered": [
+        {
+          "title": "Company annual filings",
+          "body": "Financial statements (AOC-4), annual return (MGT-7/7A), and other returns such as DPT-3 and MSME payment returns, as applicable."
+        },
+        {
+          "title": "LLP annual filings",
+          "body": "Statement of Account and Solvency (Form 8) and Annual Return (Form 11)."
+        },
+        {
+          "title": "Director KYC",
+          "body": "Filed as MCA rules require."
+        },
+        {
+          "title": "Meetings and records",
+          "body": "Notices, agendas and minutes for board meetings and AGMs; statutory registers maintained."
+        },
+        {
+          "title": "Event-based filings",
+          "body": "Capital increase, share allotment and transfer, director changes, registered office shift, and amendments to memorandum or articles."
+        },
+        {
+          "title": "Auditor appointments",
+          "body": "Appointment and change of auditors filed."
+        },
+        {
+          "title": "Closure and conversion",
+          "body": "Strike-off, LLP closure, and conversion between structures."
+        },
+        {
+          "title": "Catching up",
+          "body": "Pending filings assessed and a plan made to bring the entity up to date."
+        }
+      ],
+      "deliverables": [
+        "Annual compliance calendar",
+        "Filed forms with challans",
+        "Board and AGM minutes",
+        "Updated statutory registers"
+      ],
+      "documents": [
+        "Certificate of incorporation, MOA/AOA or LLP agreement",
+        "MCA login",
+        "Audited financial statements",
+        "Director/partner details and DSCs",
+        "Shareholding details"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "What's the penalty for late ROC filing?",
+          "a": "An additional fee for each day of delay, which adds up quickly. Prolonged non-filing can also lead to director disqualification and strike-off."
+        },
+        {
+          "q": "When are the annual forms due?",
+          "a": "Company financial statements within 30 days of the AGM; the annual return within 60 days. LLP forms have their own dates. Your calendar tracks all of them."
+        },
+        {
+          "q": "Our company hasn't filed for years. Can it be fixed?",
+          "a": "Usually, yes – pending returns can be filed with additional fees, and schemes or condonation may be available depending on status. The first step is a status check."
+        }
+      ],
+      "related": [
+        "Statutory Audit",
+        "Business Setup & Registrations",
+        "Corporate Tax"
+      ],
+      "metaTitle": "ROC & MCA Compliance for Companies and LLPs | Mumbai",
+      "metaDescription": "Annual ROC filings (AOC-4, MGT-7), LLP Form 8 and 11, director KYC, event-based filings, strike-off and pending filings for companies and LLPs in Mumbai."
+    },
+    {
+      "slug": "accounting-finalisation-payroll",
+      "name": "Accounting, Finalisation & Payroll",
+      "group": "Accounting & Advisory",
+      "heading": "Accounting, Finalisation of Accounts and Payroll in Mulund, Mumbai",
+      "summary": "Books you can run the business on – closed monthly, finalised properly, ready for audit.",
+      "intro": [
+        "Every return, audit and bank proposal is built on your books. If they're late or wrong, everything downstream is too. Books are maintained and reconciled monthly, bills and vouchers are verified before they're booked, and accounts are finalised with full notes – under Accounting Standards or Ind AS, for companies and non-corporate businesses alike. Payroll and its statutory deductions are handled alongside, so salary, TDS, PF, ESIC and Professional Tax stay in step.",
+        "We do not keep the books of any client whose statutory audit we conduct."
+      ],
+      "who": [
+        "SMEs without a full-time accounts team",
+        "Companies needing year-end finalisation and notes to accounts",
+        "Contractors and project businesses with many sub-contractor bills",
+        "Professionals and consultants",
+        "Businesses that want their in-house accounts reviewed"
+      ],
+      "covered": [
+        {
+          "title": "Bookkeeping",
+          "body": "Sales, purchases, expenses, receipts and payments recorded in your software – Tally, SAP or others you already use."
+        },
+        {
+          "title": "Bill and voucher checks",
+          "body": "Purchase bills and cash vouchers verified before they're booked; sub-contractor bills matched to work done."
+        },
+        {
+          "title": "Monthly reconciliations",
+          "body": "Bank, customer, vendor, GST and TDS – every month, not at year end."
+        },
+        {
+          "title": "Monthly reports",
+          "body": "Profit and loss, balance sheet, receivable and payable ageing, and cash position."
+        },
+        {
+          "title": "Finalisation of accounts",
+          "body": "Closing entries, provisions, depreciation, financial statements in Schedule III format, notes to accounts and CARO-ready disclosures."
+        },
+        {
+          "title": "Ind AS reporting",
+          "body": "Financial statements and disclosures for companies reporting under Ind AS."
+        },
+        {
+          "title": "Payroll",
+          "body": "Monthly salary processing, payslips, reimbursements and full-and-final settlements."
+        },
+        {
+          "title": "Payroll compliance",
+          "body": "TDS on salary, Provident Fund, ESIC and Maharashtra Professional Tax."
+        },
+        {
+          "title": "Accounts review",
+          "body": "Periodic review of books kept in-house, with corrections and process fixes."
+        }
+      ],
+      "deliverables": [
+        "Monthly books and reconciliations",
+        "Monthly MIS pack",
+        "Finalised financial statements with notes",
+        "Payroll register, payslips and statutory challans"
+      ],
+      "documents": [
+        "Sales and purchase invoices",
+        "Bank statements",
+        "Expense bills and vouchers",
+        "Sub-contractor bills and measurement sheets (if applicable)",
+        "Employee and attendance data (payroll)",
+        "Access to your accounting software"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "Which accounting software do you use?",
+          "a": "Whatever you already run – most commonly Tally and SAP – so there's nothing to migrate."
+        },
+        {
+          "q": "Can bookkeeping be done remotely?",
+          "a": "Yes. Documents are shared electronically and books are maintained on cloud software or via remote access."
+        },
+        {
+          "q": "Can you just finalise our accounts at year end?",
+          "a": "Yes. Many businesses keep books in-house and need help only with closing entries, financial statements and notes. That's handled as a separate engagement."
+        }
+      ],
+      "related": [
+        "Statutory Audit",
+        "Project Finance & CMA Data",
+        "GST Registration & Returns",
+        "TDS & TCS Compliance"
+      ],
+      "metaTitle": "Accounting, Finalisation & Payroll in Mulund, Mumbai",
+      "metaDescription": "Bookkeeping, monthly reconciliations, finalisation of accounts, Ind AS financial statements and payroll with PF, ESIC and TDS for businesses in Mumbai."
+    },
+    {
+      "slug": "project-finance-cma-data",
+      "name": "Project Finance & CMA Data",
+      "group": "Accounting & Advisory",
+      "heading": "Project Reports, CMA Data and Financial Advisory in Mumbai",
+      "summary": "Bank-ready numbers for working capital and term loan proposals – projections that hold up to a credit officer's questions.",
+      "intro": [
+        "When a business applies for a working capital limit or a term loan, the bank's decision rests on the numbers you give it: past financials, projections, ratios and CMA data. Nishita has prepared CMA data and compiled bank information for working capital and term loan proposals for years. Projections are built from your real operating data, the assumptions are written down, and you understand every figure before it goes to the bank.",
+        "We prepare financial information for credit proposals. Chartered accountants in practice do not arrange loans; the application and the credit decision stay between you and your bank."
+      ],
+      "who": [
+        "Businesses applying for or renewing working capital limits",
+        "Businesses seeking term loans for expansion or equipment",
+        "Companies responding to bank queries during credit review",
+        "Owners who want budgets and cash flow plans they can manage against"
+      ],
+      "covered": [
+        {
+          "title": "CMA data",
+          "body": "Credit Monitoring Arrangement data in the bank's format – past, current and projected years, with ratio analysis."
+        },
+        {
+          "title": "Project reports",
+          "body": "Project cost, means of finance, projected financial statements, repayment schedule and sensitivity analysis for term loans."
+        },
+        {
+          "title": "Bank data compilation",
+          "body": "Stock statements, debtor statements and other information banks ask for during sanction and renewal."
+        },
+        {
+          "title": "Budgets and forecasts",
+          "body": "Annual budgets and rolling forecasts built from your actual cost structure."
+        },
+        {
+          "title": "Cash flow planning",
+          "body": "Cash flow forecasts and working capital review, so funding needs are spotted early."
+        },
+        {
+          "title": "Management reporting",
+          "body": "Monthly MIS with key indicators and variance commentary."
+        }
+      ],
+      "deliverables": [
+        "CMA data in bank format",
+        "Project report with assumptions note",
+        "Projected financial statements and ratios",
+        "Cash flow forecast"
+      ],
+      "documents": [
+        "Audited financial statements for the last 2–3 years",
+        "Provisional financials for the current year",
+        "Existing sanction letters and loan statements",
+        "Quotations and project cost details (for term loans)",
+        "Stock and debtor statements"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "What is CMA data?",
+          "a": "Credit Monitoring Arrangement data is a standard set of financial statements, projections and ratios that banks use to assess working capital needs. It covers past, current and future years."
+        },
+        {
+          "q": "Can you help us get a loan?",
+          "a": "The financial information banks need – CMA data, project reports, projections – is prepared for you. Chartered accountants in practice aren't permitted to arrange loans, so the application and credit decision remain with you and the bank."
+        },
+        {
+          "q": "How far ahead do projections go?",
+          "a": "Usually the current year plus the next one to five years, depending on the facility and the bank's requirement."
+        }
+      ],
+      "related": [
+        "Accounting, Finalisation & Payroll",
+        "Internal Audit & Stock Audit",
+        "CA Certificates"
+      ],
+      "metaTitle": "CMA Data & Project Report Preparation in Mumbai | CA",
+      "metaDescription": "CMA data and project reports for working capital and term loan proposals, plus budgets, cash flow forecasts and MIS. CA Nishita Gandhi, Mulund, Mumbai."
+    },
+    {
+      "slug": "ca-certificates",
+      "name": "CA Certificates",
+      "group": "Certifications",
+      "heading": "Chartered Accountant Certificates in Mulund, Mumbai",
+      "summary": "Certified after the records are checked – with a UDIN anyone can verify.",
+      "intro": [
+        "Banks, embassies, government departments and counterparties often need figures certified by a chartered accountant. A certificate is issued only after the underlying records are examined, and every one carries a UDIN – a Unique Document Identification Number generated on the ICAI portal – so whoever receives it can confirm it's genuine."
+      ],
+      "who": [
+        "Individuals applying for visas or education loans",
+        "Businesses bidding for tenders",
+        "Exporters and importers",
+        "Businesses applying for or renewing bank facilities",
+        "Anyone remitting money abroad"
+      ],
+      "covered": [
+        {
+          "title": "Net worth certificate",
+          "body": "For visas, tenders and banks."
+        },
+        {
+          "title": "Turnover certificate",
+          "body": "From books and GST returns."
+        },
+        {
+          "title": "Form 15CB",
+          "body": "Certification of taxability for payments to non-residents."
+        },
+        {
+          "title": "Utilisation certificates",
+          "body": "For funds, grants or loan proceeds."
+        },
+        {
+          "title": "Capital contribution certificates",
+          "body": "Capital introduced, for regulatory filings."
+        },
+        {
+          "title": "Other certificates",
+          "body": "Certificates required under various laws and by banks, based on verification of records."
+        }
+      ],
+      "deliverables": [
+        "Signed certificate with UDIN",
+        "Working papers retained as required"
+      ],
+      "documents": [
+        "Purpose and format required by the recipient",
+        "Supporting records – bank statements, financial statements, valuation reports, GST returns",
+        "Identity and address proof"
+      ],
+      "documentsNote": "You'll get an exact list for your case at the start.",
+      "faqs": [
+        {
+          "q": "What is a UDIN?",
+          "a": "A Unique Document Identification Number a chartered accountant generates on the ICAI portal for every certificate or report signed. It lets anyone verify the document."
+        },
+        {
+          "q": "Can a certificate be issued without documents?",
+          "a": "No. Figures are certified only after the records behind them are examined."
+        }
+      ],
+      "related": [
+        "NRI & International Taxation",
+        "Project Finance & CMA Data",
+        "Statutory Audit"
+      ],
+      "metaTitle": "CA Certificates – Net Worth, Turnover, 15CB | Mulund",
+      "metaDescription": "Net worth, turnover, Form 15CB, utilisation and other CA certificates with UDIN, issued after verification of records. CA Nishita Gandhi, Mulund, Mumbai."
+    }
+  ]
+}

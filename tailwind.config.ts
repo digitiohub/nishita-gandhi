@@ -52,7 +52,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        serif: ["var(--font-dm-serif)", "serif"],
+        serif: ["var(--font-caslon-display)", "Georgia", "serif"],
+        "serif-text": ["var(--font-caslon-text)", "Georgia", "serif"],
         sans: ["var(--font-manrope)", "sans-serif"],
       },
       fontSize: {

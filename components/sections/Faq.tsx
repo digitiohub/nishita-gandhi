@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 import {
@@ -45,12 +46,6 @@ export function Faq() {
         className="mx-auto grid max-w-[1400px] grid-cols-1 gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24"
       >
         <motion.div variants={fadeUp}>
-          <div className="mb-6 flex items-center gap-3">
-            <span className="h-px w-8 bg-accent-dark" />
-            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">
-              06 &middot; FAQ
-            </span>
-          </div>
           <h2 className="font-serif text-[40px] leading-[1.1] text-foreground sm:text-5xl">
             Common questions.
           </h2>
@@ -65,6 +60,12 @@ export function Faq() {
             </a>
             .
           </p>
+          <Link
+            href="/knowledge-centre/faqs"
+            className="mt-6 inline-block text-[15px] font-semibold text-accent-dark underline-offset-4 hover:underline"
+          >
+            All 49 questions, by topic
+          </Link>
         </motion.div>
 
         <motion.div variants={fadeUp}>

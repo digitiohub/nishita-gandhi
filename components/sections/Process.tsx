@@ -1,8 +1,10 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
+import { useRef } from "react";
+import { motion, useInView, type Variants } from "framer-motion";
 
 import { ease, fadeUp, staggerContainer, viewportOnce } from "@/lib/motion";
+import { cn } from "@/lib/utils";
 
 const STEPS = [
   {
@@ -53,12 +55,6 @@ export function Process() {
           variants={staggerContainer}
           className="mb-16 max-w-[640px]"
         >
-          <motion.div variants={fadeUp} className="mb-6 flex items-center gap-3">
-            <span className="h-px w-8 bg-accent" />
-            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-inv">
-              04 &middot; How We Work
-            </span>
-          </motion.div>
           <motion.h2 variants={fadeUp} className="font-serif text-[40px] leading-[1.1] text-foreground-inv sm:text-5xl lg:text-6xl">
             Four steps to a file you never worry about.
           </motion.h2>
@@ -84,30 +80,44 @@ export function Process() {
           />
 
           {STEPS.map((s, i) => (
-            <li key={s.title} className="group relative pl-12 lg:pl-0 lg:pt-14">
-              <motion.span
-                aria-hidden="true"
-                custom={i}
-                variants={dot}
-                className="absolute left-0 top-0 flex h-6 w-6 items-center justify-center rounded-full border border-accent bg-bg-dark"
-              >
-                <span className="h-2 w-2 rounded-full bg-accent" />
-              </motion.span>
-              <motion.div
-                custom={i}
-                variants={step}
-                className="rounded-lg border border-transparent transition-colors duration-200 group-hover:border-border-dark lg:-m-5 lg:p-5"
-              >
-                <span className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
-                  Step {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="mt-3 font-serif text-3xl text-foreground-inv">{s.title}</h3>
-                <p className="mt-3 max-w-[34ch] text-sm leading-[1.65] text-muted-inv">{s.body}</p>
-              </motion.div>
-            </li>
+            <Step key={s.title} {...s} i={i} />
           ))}
         </motion.ol>
       </div>
     </section>
+  );
+}
+
+function Step({ title, body, i }: { title: string; body: string; i: number }) {
+  const ref = useRef<HTMLLIElement>(null);
+  // Stacked on mobile, the step crossing mid-screen is the active one; desktop shows all four, so hover only
+  const active = useInView(ref, { margin: "-40% 0px -40% 0px" });
+
+  return (
+    <li ref={ref} className="group relative pl-12 lg:pl-0 lg:pt-14">
+      <motion.span
+        aria-hidden="true"
+        custom={i}
+        variants={dot}
+        className="absolute left-0 top-0 flex h-6 w-6 items-center justify-center rounded-full border border-accent bg-bg-dark"
+      >
+        <span className="h-2 w-2 rounded-full bg-accent" />
+      </motion.span>
+      <motion.div
+        custom={i}
+        variants={step}
+        className="rounded-lg border border-transparent transition-colors duration-200 group-hover:border-accent/40 lg:-m-5 lg:p-5"
+      >
+        <h3
+          className={cn(
+            "font-serif text-3xl text-foreground-inv transition-colors duration-300 lg:group-hover:text-accent",
+            active && "max-lg:text-accent"
+          )}
+        >
+          {title}
+        </h3>
+        <p className="mt-3 max-w-[34ch] text-sm leading-[1.65] text-muted-inv">{body}</p>
+      </motion.div>
+    </li>
   );
 }

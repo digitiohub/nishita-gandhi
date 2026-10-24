@@ -2,6 +2,8 @@
 
 import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "@phosphor-icons/react";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 
 import { client } from "@/lib/tokens";
@@ -37,7 +39,7 @@ export function About() {
               aria-hidden="true"
             />
             <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg bg-surface-dark">
-              <motion.div style={{ y: reduceMotion ? 0 : y }} className="absolute -inset-y-6 inset-x-0">
+              <motion.div style={{ y: reduceMotion ? 0 : y }} className="absolute -inset-y-6 inset-x-0 max-lg:!transform-none">
                 <Image
                   src="/images/nishita-full.jpg"
                   alt="Nishita Gandhi"
@@ -50,12 +52,6 @@ export function About() {
           </motion.div>
 
           <motion.div variants={fadeUp}>
-            <div className="mb-6 flex items-center gap-3">
-              <span className="h-px w-8 bg-accent-dark" />
-              <span className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">
-                05 &middot; About
-              </span>
-            </div>
             <h2 className="font-serif text-[40px] leading-[1.1] text-foreground sm:text-5xl lg:text-6xl">
               Meet Nishita Gandhi.
             </h2>
@@ -81,6 +77,13 @@ export function About() {
                 </div>
               ))}
             </dl>
+            <Link
+              href="/about"
+              className="group mt-8 inline-flex items-center gap-2 text-[15px] font-semibold text-accent-dark underline-offset-4 hover:underline"
+            >
+              Read the full profile
+              <ArrowRight size={14} weight="bold" aria-hidden="true" className="transition-transform group-hover:translate-x-1" />
+            </Link>
           </motion.div>
         </div>
       </motion.div>

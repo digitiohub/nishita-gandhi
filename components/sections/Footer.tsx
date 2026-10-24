@@ -1,62 +1,111 @@
+import Link from "next/link";
+
+import { knowledgeCentre, legalNav, services, serviceHref } from "@/lib/content/site";
 import { client } from "@/lib/tokens";
 
-const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Who We Serve", href: "#clients" },
-  { label: "Process", href: "#process" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
-];
+const linkClass = "block py-1.5 text-sm text-muted-inv transition-colors duration-200 hover:text-accent";
+
+function Column({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <h2 className="mb-4 font-serif-text text-base italic text-foreground-inv">{title}</h2>
+      {children}
+    </div>
+  );
+}
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-border-dark bg-bg-dark px-6 pb-10 pt-16 lg:px-10">
+    <footer className="relative overflow-hidden border-t border-border-dark bg-bg-dark px-6 pb-10 pt-20 lg:px-10">
       <div className="mx-auto max-w-[1400px]">
-        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-[1fr_2fr_1fr_0.7fr] lg:gap-10">
           <div>
-            <p className="font-serif text-xl text-foreground-inv">Nishita Gandhi</p>
-            <p className="mt-2 text-sm text-muted-inv">
-              Chartered Accountant &middot; ACA, Member of ICAI
-            </p>
-            <p className="mt-1 text-sm text-muted-inv">{client.address}</p>
-          </div>
-
-          <nav aria-label="Footer" className="flex flex-wrap gap-x-6 gap-y-1 sm:gap-x-8">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="py-2 text-xs font-semibold uppercase tracking-[0.1em] text-muted-inv transition-colors hover:text-foreground-inv"
-              >
-                {link.label}
+            <p className="font-serif text-[28px] leading-tight text-foreground-inv">CA Nishita Gandhi</p>
+            <p className="mt-2 text-sm text-muted-inv">Chartered Accountant &middot; Member, ICAI</p>
+            <address className="mt-6 text-sm not-italic leading-[1.7] text-muted-inv">
+              {client.address}
+              <br />
+              By appointment &middot; English, Hindi, Gujarati
+            </address>
+            <div className="mt-5 flex flex-col">
+              <a href={`tel:${client.phoneHref}`} className={linkClass}>
+                {client.phone}
               </a>
-            ))}
-          </nav>
-
-          <div className="flex flex-col text-sm lg:items-end">
-            <a href={`tel:${client.phoneHref}`} className="py-1.5 text-muted-inv transition-colors hover:text-accent">
-              {client.phone}
-            </a>
-            <a href={`mailto:${client.email}`} className="py-1.5 text-muted-inv transition-colors hover:text-accent">
-              {client.email}
-            </a>
+              <a href={`mailto:${client.email}`} className={linkClass}>
+                {client.email}
+              </a>
+            </div>
           </div>
+
+          <Column title="Services">
+            <ul className="grid grid-cols-1 gap-x-8 sm:grid-cols-2">
+              {services.map((s) => (
+                <li key={s.slug}>
+                  <Link href={serviceHref(s)} className={linkClass}>
+                    {s.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Column>
+
+          <Column title="Resources">
+            <ul>
+              {knowledgeCentre.map((k) => (
+                <li key={k.href}>
+                  <Link href={k.href} className={linkClass}>
+                    {k.title}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link href="/about" className={linkClass}>
+                  About Nishita
+                </Link>
+              </li>
+              <li>
+                <Link href="/who-we-work-with" className={linkClass}>
+                  Who We Work With
+                </Link>
+              </li>
+              <li>
+                <Link href="/chartered-accountant-mulund" className={linkClass}>
+                  Chartered Accountant in Mulund
+                </Link>
+              </li>
+            </ul>
+          </Column>
+
+          <Column title="Legal">
+            <ul>
+              {legalNav.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className={linkClass}>
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link href="/contact" className={linkClass}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </Column>
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-border-dark pt-6 text-xs leading-[1.6] text-muted-inv sm:flex-row sm:items-start sm:justify-between">
-          <p>&copy; 2026 Nishita Gandhi. All rights reserved.</p>
-          <p className="max-w-[60ch] sm:text-right">
-            Information on this website is general and is not professional
-            advice. Please speak to us about your specific facts before acting
-            on it.
+        <div className="mt-16 flex flex-col gap-4 border-t border-border-dark pt-6 text-xs leading-[1.6] text-muted-inv sm:flex-row sm:items-start sm:justify-between">
+          <p>&copy; 2026 CA Nishita Gandhi. All rights reserved.</p>
+          <p className="max-w-[64ch] sm:text-right">
+            Information on this website is general and is not professional advice. Please speak to us
+            about your specific facts before acting on it.
           </p>
         </div>
       </div>
 
       <p
         aria-hidden="true"
-        className="pointer-events-none -mb-6 mt-10 select-none text-center font-serif text-[22vw] font-normal leading-none text-foreground-inv/[0.04] sm:text-[16vw]"
+        className="pointer-events-none -mb-6 mt-10 select-none text-center font-serif text-[22vw] leading-none text-foreground-inv/[0.04] sm:text-[16vw]"
       >
         NISHITA
       </p>

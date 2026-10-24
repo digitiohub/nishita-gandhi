@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-24T07:51:21+00:00",
+  "title": "Design System: CA Nishita Gandhi",
+  "extensions": {
+    "colorMeta": {
+      "ledger-navy": {
+        "role": "neutral",
+        "displayName": "Ledger Navy",
+        "canonical": "#0E1A2B",
+        "tonalRamp": [
+          "#13233A",
+          "#213D66",
+          "#2F5892",
+          "#3E73BE",
+          "#6892CE",
+          "#94B2DC",
+          "#C0D1EA",
+          "#ECF1F9"
+        ],
+        "cssVar": "var(--bg-dark)"
+      },
+      "folder-slate": {
+        "role": "neutral",
+        "displayName": "Folder Slate",
+        "canonical": "#14243A",
+        "tonalRamp": [
+          "#142339",
+          "#233E64",
+          "#325990",
+          "#4074BB",
+          "#6A93CC",
+          "#95B2DB",
+          "#C1D2EA",
+          "#ECF1F8"
+        ],
+        "cssVar": "var(--surface-dark)"
+      },
+      "navy-rule": {
+        "role": "neutral",
+        "displayName": "Navy Rule",
+        "canonical": "#22344E",
+        "tonalRamp": [
+          "#172435",
+          "#293F5E",
+          "#3B5A86",
+          "#4C75AF",
+          "#7394C2",
+          "#9CB3D4",
+          "#C5D2E6",
+          "#EDF1F7"
+        ],
+        "cssVar": "var(--border-dark)"
+      },
+      "cream-paper": {
+        "role": "neutral",
+        "displayName": "Cream Paper",
+        "canonical": "#F6F3EC",
+        "tonalRamp": [
+          "#342C19",
+          "#5B4D2B",
+          "#836E3E",
+          "#AB9051",
+          "#BFA977",
+          "#D1C29F",
+          "#E4DBC6",
+          "#F7F4EE"
+        ],
+        "cssVar": "var(--bg-light)"
+      },
+      "slip-paper": {
+        "role": "neutral",
+        "displayName": "Slip Paper",
+        "canonical": "#FBF9F4",
+        "tonalRamp": [
+          "#382E14",
+          "#635124",
+          "#8E7433",
+          "#B89743",
+          "#CAAF6C",
+          "#D9C697",
+          "#E9DDC2",
+          "#F8F5EC"
+        ]
+      },
+      "paper-rule": {
+        "role": "neutral",
+        "displayName": "Paper Rule",
+        "canonical": "#E3DDCE",
+        "tonalRamp": [
+          "#312B1C",
+          "#564B31",
+          "#7B6C46",
+          "#A08C5B",
+          "#B6A780",
+          "#CBC0A5",
+          "#E1DACA",
+          "#F6F4EF"
+        ],
+        "cssVar": "var(--border-light)"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#14202E",
+        "tonalRamp": [
+          "#172535",
+          "#29415E",
+          "#3B5E87",
+          "#4C7AAF",
+          "#7398C2",
+          "#9CB6D4",
+          "#C5D4E6",
+          "#EDF2F7"
+        ],
+        "cssVar": "var(--foreground)"
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Ink Muted",
+        "canonical": "#5B6270",
+        "tonalRamp": [
+          "#22252A",
+          "#3C414A",
+          "#575D6B",
+          "#71798B",
+          "#9097A5",
+          "#B1B6BF",
+          "#D1D4D9",
+          "#F1F2F4"
+        ],
+        "cssVar": "var(--muted)"
+      },
+      "mist-muted": {
+        "role": "neutral",
+        "displayName": "Mist Muted",
+        "canonical": "#9AA7BA",
+        "tonalRamp": [
+          "#1F252D",
+          "#374150",
+          "#4E5D73",
+          "#667995",
+          "#8897AE",
+          "#ABB5C5",
+          "#CDD4DD",
+          "#F0F2F5"
+        ],
+        "cssVar": "var(--muted-inv)"
+      },
+      "signal-teal": {
+        "role": "primary",
+        "displayName": "Signal Teal",
+        "canonical": "#5EC4B6",
+        "tonalRamp": [
+          "#153833",
+          "#24635A",
+          "#348D81",
+          "#43B8A8",
+          "#6CC9BD",
+          "#97D9D0",
+          "#C2E9E3",
+          "#ECF8F7"
+        ],
+        "cssVar": "var(--accent)"
+      },
+      "signal-teal-hover": {
+        "role": "primary",
+        "displayName": "Signal Teal Hover",
+        "canonical": "#7DD3C7",
+        "tonalRamp": [
+          "#133934",
+          "#22655B",
+          "#319083",
+          "#40BCAA",
+          "#69CCBF",
+          "#95DBD1",
+          "#C0EAE4",
+          "#ECF9F7"
+        ]
+      },
+      "ledger-teal": {
+        "role": "primary",
+        "displayName": "Ledger Teal",
+        "canonical": "#1A6B62",
+        "tonalRamp": [
+          "#0F3E38",
+          "#1A6C63",
+          "#269B8E",
+          "#31CAB9",
+          "#5ED8CA",
+          "#8DE3DA",
+          "#BCEFE9",
+          "#EAFAF8"
+        ],
+        "cssVar": "var(--accent-dark)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Home hero H1 only, masked line by line."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Inner page H1 in the navy page head."
+      },
+      "section": {
+        "displayName": "Section",
+        "purpose": "Section H2s and the CtaBand title."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Ledger-row titles, 22 to 42px by context."
+      },
+      "title-italic": {
+        "displayName": "Title Italic",
+        "purpose": "Caslon Text italic group names, menu group heads, Related services, checklist header."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Hero subhead only."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Long-form reading at max 68ch."
+      },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "Summaries and supporting copy."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase field labels, table heads, data terms, logo line; never above a heading."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Uppercase pill button text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "slip-lift",
+        "value": "0 18px 40px -24px rgba(20,32,46,0.35), 0 2px 6px -2px rgba(20,32,46,0.08)",
+        "purpose": "Checklist slip on cream."
+      },
+      {
+        "name": "card-lift",
+        "value": "0 24px 48px -28px rgba(14,26,43,0.6)",
+        "purpose": "Navy aside card on cream."
+      },
+      {
+        "name": "photo-lift",
+        "value": "0 24px 48px -16px rgba(0,0,0,0.6)",
+        "purpose": "Hero portrait card and badge on navy."
+      },
+      {
+        "name": "nav-scrolled",
+        "value": "0 8px 32px rgba(4,10,20,0.35)",
+        "purpose": "Fixed nav after 8px of scroll."
+      },
+      {
+        "name": "teal-hover-glow",
+        "value": "0 12px 28px -10px rgba(94,196,182,0.55)",
+        "purpose": "Primary button hover."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 6px rgba(94,196,182,0.22)",
+        "purpose": "Button focus-visible, with the 2px outline."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-expo-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Every entrance, reveal, crossfade and accordion."
+      },
+      {
+        "name": "page-crossfade",
+        "value": "520ms cubic-bezier(0.16, 1, 0.3, 1) backwards; opacity 0 to 1, translate 10px to none",
+        "purpose": "Template remount on every navigation; backwards fill leaves no transform."
+      },
+      {
+        "name": "scroll-reveal",
+        "value": "700ms cubic-bezier(0.16, 1, 0.3, 1); translate 22px; delay calc(var(--i) * 70ms)",
+        "purpose": "One-time reveal, armed only under html.js."
+      },
+      {
+        "name": "hero-mask-rise",
+        "value": "900ms cubic-bezier(0.16, 1, 0.3, 1); delay calc(var(--i) * 110ms + 60ms)",
+        "purpose": "Hero headline lines rising from a mask."
+      },
+      {
+        "name": "hero-rise",
+        "value": "800ms cubic-bezier(0.16, 1, 0.3, 1); translate 0.5em; delay calc(var(--i) * 90ms + 80ms)",
+        "purpose": "Remaining hero elements."
+      },
+      {
+        "name": "hover",
+        "value": "150ms to 250ms (200ms ease-out default)",
+        "purpose": "Colour, border and arrow translate on hover."
+      },
+      {
+        "name": "nav-underline",
+        "value": "300ms ease-out scale-x",
+        "purpose": "Top-link underline."
+      },
+      {
+        "name": "accordion",
+        "value": "open 300ms, close 250ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "FAQ accordions."
+      },
+      {
+        "name": "file-stack",
+        "value": "WebGL; settle on load, pointer tilt, scroll turn; frameloop never when offscreen; 700ms crossfade over still",
+        "purpose": "The single authored moment; desktop fine pointer, motion allowed, WebGL2 only."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "reveals shown; animation and transition 0.01ms; smooth scroll off",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ],
+    "assets": [
+      {
+        "path": "public/images/file-stack.png",
+        "size": "1248x1560",
+        "origin": "Rendered in-house from components/three/FileStack.tsx via headless Chrome",
+        "provenance": "PNG tEXt impeccable:prompt",
+        "maintenance": "Re-render after changing the scene."
+      },
+      {
+        "path": "public/images/nishita-full.jpg",
+        "size": "1080x1920",
+        "origin": "Client-supplied portrait",
+        "provenance": "JPEG COM impeccable:prompt",
+        "maintenance": "Replace only with a client-supplied photograph."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action per context: Get in touch, Call.",
+      "html": "<button class=\"ds-btn-primary\">Get in touch <svg width=\"16\" height=\"16\" viewBox=\"0 0 256 256\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M224.49 136.49l-72 72a12 12 0 0 1-17-17L187 140H40a12 12 0 0 1 0-24h147l-51.49-51.51a12 12 0 0 1 17-17l72 72a12 12 0 0 1-.02 17z\"/></svg></button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 28px;border-radius:999px;font-family:var(--font-manrope),Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all 200ms ease-out;background:var(--accent);color:var(--bg-dark);border:none;box-shadow:0 1px 2px rgba(14,26,43,0.15);} .ds-btn-primary svg{transition:transform 200ms;} .ds-btn-primary:hover{background:#7DD3C7;transform:translateY(-2px);box-shadow:0 12px 28px -10px rgba(94,196,182,0.55);} .ds-btn-primary:hover svg,.ds-btn-primary:focus-visible svg{transform:translateX(4px);} .ds-btn-primary:active{transform:scale(0.97);} .ds-btn-primary:focus-visible{outline:2px solid var(--accent-dark);outline-offset:3px;box-shadow:0 0 0 6px rgba(94,196,182,0.22);}"
+    },
+    {
+      "name": "Outline Inverse Button",
+      "kind": "button",
+      "refersTo": "button-outline-inverse",
+      "description": "Secondary routes on navy: Email, Contact form, Income tax returns.",
+      "html": "<div class=\"ds-navy\"><button class=\"ds-btn-outline-inv\">Email</button></div>",
+      "css": ".ds-navy{background:var(--bg-dark);padding:24px;} .ds-btn-outline-inv{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 28px;border-radius:999px;font-family:var(--font-manrope),Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all 200ms ease-out;background:transparent;color:var(--foreground-inv);border:1px solid rgba(246,243,236,0.3);} .ds-btn-outline-inv:hover{border-color:rgba(246,243,236,0.7);background:rgba(246,243,236,0.05);transform:translateY(-2px);} .ds-btn-outline-inv:focus-visible{outline:2px solid var(--accent);outline-offset:3px;box-shadow:0 0 0 6px rgba(94,196,182,0.22);}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action on cream.",
+      "html": "<button class=\"ds-btn-outline\">See all services</button>",
+      "css": ".ds-btn-outline{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 28px;border-radius:999px;font-family:var(--font-manrope),Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all 200ms ease-out;background:transparent;color:var(--foreground);border:1px solid rgba(20,32,46,0.25);} .ds-btn-outline:hover{border-color:rgba(20,32,46,0.6);background:rgba(20,32,46,0.05);transform:translateY(-2px);} .ds-btn-outline:focus-visible{outline:2px solid var(--accent-dark);outline-offset:3px;}"
+    },
+    {
+      "name": "Underline Field",
+      "kind": "input",
+      "refersTo": "input-line",
+      "description": "Contact form field on navy: underline only, teal on focus.",
+      "html": "<div class=\"ds-navy\"><label class=\"ds-label\" for=\"ds-n\">Your name</label><input id=\"ds-n\" class=\"ds-input\" placeholder=\"Full name\"></div>",
+      "css": ".ds-navy{background:var(--bg-dark);padding:24px;} .ds-label{display:block;font-family:Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted-inv);margin-bottom:8px;} .ds-input{display:block;width:100%;height:44px;padding:8px 0;background:transparent;border:0;border-bottom:1px solid var(--border-dark);color:var(--foreground-inv);font-size:16px;font-family:Manrope,sans-serif;caret-color:var(--accent-dark);} .ds-input::placeholder{color:rgba(154,167,186,0.7);} .ds-input:focus-visible{outline:none;border-bottom-color:var(--accent);box-shadow:0 1px 0 0 #5EC4B6;}"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": "ledger-navy",
+      "description": "Fixed 80px navy bar, logo lockup, teal underline links, small primary action.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-logo\"><span class=\"ds-mono\">NG</span><span><span class=\"ds-lname\">Nishita Gandhi</span><span class=\"ds-lsub\">Chartered Accountant</span></span></span><span class=\"ds-links\"><a href=\"#\" class=\"ds-link is-active\">About</a><a href=\"#\" class=\"ds-link\">Services</a><a href=\"#\" class=\"ds-link\">Contact</a></span></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;height:80px;padding:0 40px;background:rgba(14,26,43,0.95);border-bottom:1px solid var(--border-dark);box-shadow:0 8px 32px rgba(4,10,20,0.35);} .ds-logo{display:flex;align-items:center;gap:12px;} .ds-mono{display:flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:999px;border:1px solid rgba(94,196,182,0.5);background:rgba(94,196,182,0.1);font-family:'Libre Caslon Display',Georgia,serif;font-size:15px;color:var(--foreground-inv);} .ds-lname{display:block;font-family:'Libre Caslon Display',Georgia,serif;font-size:19px;color:var(--foreground-inv);line-height:1;} .ds-lsub{display:block;margin-top:4px;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted-inv);} .ds-links{display:flex;gap:4px;} .ds-link{position:relative;padding:10px 14px;font-family:Manrope,sans-serif;font-size:14px;font-weight:600;color:var(--foreground-inv);text-decoration:none;} .ds-link::after{content:'';position:absolute;left:14px;right:14px;bottom:4px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform 300ms ease-out;} .ds-link:hover::after,.ds-link:focus-visible::after,.ds-link.is-active::after{transform:scaleX(1);} .ds-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}"
+    },
+    {
+      "name": "Ruled Ledger Row",
+      "kind": "custom",
+      "refersTo": "ledger-row",
+      "description": "The house index pattern: heavy ink header rule, hairline rows, Caslon titles, sliding arrow disc.",
+      "html": "<ul class=\"ds-ledger\"><li><a href=\"#\" class=\"ds-row\"><span class=\"ds-rt\">Income Tax Return Filing</span><span class=\"ds-rs\">Returns for salaried individuals, capital gains and advance tax.</span><span class=\"ds-disc\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 256 256\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M224.49 136.49l-72 72a12 12 0 0 1-17-17L187 140H40a12 12 0 0 1 0-24h147l-51.49-51.51a12 12 0 0 1 17-17l72 72a12 12 0 0 1-.02 17z\"/></svg></span></a></li><li><a href=\"#\" class=\"ds-row\"><span class=\"ds-rt\">GST Registration &amp; Returns</span><span class=\"ds-rs\">Registration, monthly and annual returns, credit reconciliation.</span><span class=\"ds-disc\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 256 256\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M224.49 136.49l-72 72a12 12 0 0 1-17-17L187 140H40a12 12 0 0 1 0-24h147l-51.49-51.51a12 12 0 0 1 17-17l72 72a12 12 0 0 1-.02 17z\"/></svg></span></a></li></ul>",
+      "css": ".ds-ledger{list-style:none;margin:0;padding:0;border-top:2px solid rgba(20,32,46,0.85);background:var(--bg-light);} .ds-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr) auto;gap:40px;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--border-light);text-decoration:none;transition:border-color 200ms;} .ds-rt{font-family:'Libre Caslon Display',Georgia,serif;font-size:30px;line-height:1.15;color:var(--foreground);transition:color 200ms;} .ds-rs{font-family:Manrope,sans-serif;font-size:15px;line-height:1.65;color:var(--muted);max-width:60ch;} .ds-disc{align-self:center;display:flex;width:40px;height:40px;align-items:center;justify-content:center;border-radius:999px;border:1px solid var(--border-light);color:var(--foreground);transition:background-color 200ms,border-color 200ms,color 200ms,transform 200ms;} .ds-row:hover{border-color:rgba(26,107,98,0.5);} .ds-row:hover .ds-rt{color:var(--accent-dark);} .ds-row:hover .ds-disc{transform:translateX(4px);background:var(--accent-dark);border-color:var(--accent-dark);color:var(--bg-light);} .ds-row:focus-visible{outline:2px solid var(--accent-dark);outline-offset:3px;}"
+    },
+    {
+      "name": "Page Head with Folder Tab",
+      "kind": "custom",
+      "refersTo": "page-header",
+      "description": "Navy page head over cream body, joined by the folder tab.",
+      "html": "<div class=\"ds-head\"><p class=\"ds-crumb\">Home / Services</p><h1 class=\"ds-h1\">Chartered Accountant Services in Mulund</h1><p class=\"ds-lede\">Tax, GST, audit, company compliance and accounts, for individuals, NRIs and businesses.</p><span class=\"ds-tab\"></span></div><div class=\"ds-body\"></div>",
+      "css": ".ds-head{position:relative;background:var(--bg-dark);padding:64px 40px 96px;} .ds-crumb{margin:0 0 32px;font-family:Manrope,sans-serif;font-size:13px;color:var(--muted-inv);} .ds-h1{margin:0;font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:clamp(2.4rem,6.2vw,5.25rem);line-height:1.04;letter-spacing:-0.01em;color:var(--foreground-inv);} .ds-lede{margin:28px 0 0;max-width:56ch;font-family:Manrope,sans-serif;font-size:18px;line-height:1.65;color:var(--muted-inv);} .ds-tab{position:absolute;left:40px;bottom:0;width:224px;height:16px;border-radius:10px 10px 0 0;background:var(--bg-light);} .ds-body{height:48px;background:var(--bg-light);}"
+    },
+    {
+      "name": "Checklist Slip",
+      "kind": "card",
+      "refersTo": "checklist-slip",
+      "description": "Documents to keep ready on every service page: a loose, slightly tilted ruled slip.",
+      "html": "<div class=\"ds-slipwrap\"><div class=\"ds-slip\"><p class=\"ds-sh\">Checklist &middot; Income Tax Return Filing</p><ul><li><span class=\"ds-box\"></span>Form 16 from your employer</li><li><span class=\"ds-box\"></span>AIS and Form 26AS</li><li><span class=\"ds-box\"></span>Bank interest certificates</li></ul></div></div>",
+      "css": ".ds-slipwrap{background:var(--bg-light);padding:32px;} .ds-slip{max-width:620px;transform:rotate(-0.4deg);border-radius:4px;border:1px solid #E3DDCE;background:#FBF9F4;padding:24px 28px 28px;box-shadow:0 18px 40px -24px rgba(20,32,46,0.35),0 2px 6px -2px rgba(20,32,46,0.08);} .ds-sh{margin:0;padding-bottom:12px;border-bottom:2px solid rgba(26,107,98,0.7);font-family:'Libre Caslon Text',Georgia,serif;font-style:italic;font-size:14px;color:var(--accent-dark);} .ds-slip ul{list-style:none;margin:0;padding:0;} .ds-slip li{display:flex;align-items:center;gap:16px;padding:12px 0;border-bottom:1px dashed #DDD5C2;font-family:Manrope,sans-serif;font-size:15px;color:var(--foreground);} .ds-box{width:16px;height:16px;flex-shrink:0;border-radius:3px;border:1.5px solid rgba(20,32,46,0.5);}"
+    },
+    {
+      "name": "CtaBand",
+      "kind": "custom",
+      "refersTo": "cta-band",
+      "description": "The navy close on every inner page with the three real contact routes.",
+      "html": "<section class=\"ds-cta\"><div><h2 class=\"ds-ct\">Tell us what&rsquo;s going on.</h2><p class=\"ds-cb\">A short call or email is enough to start.</p></div><div class=\"ds-ca\"><a class=\"ds-cp\" href=\"#\">Call +91 99676 46373</a><a class=\"ds-co\" href=\"#\">Email</a><a class=\"ds-co\" href=\"#\">Contact form</a></div></section>",
+      "css": ".ds-cta{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end;background:var(--bg-dark);padding:96px 40px;} .ds-ct{margin:0;font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:clamp(2.2rem,4.6vw,3.75rem);line-height:1.06;color:var(--foreground-inv);} .ds-cb{margin:20px 0 0;max-width:52ch;font-family:Manrope,sans-serif;font-size:16px;line-height:1.65;color:var(--muted-inv);} .ds-ca{display:flex;flex-direction:column;gap:12px;width:340px;justify-self:end;} .ds-cp,.ds-co{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 28px;border-radius:999px;font-family:var(--font-manrope),Manrope,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all 200ms ease-out;height:52px;padding:0 32px;justify-content:center;text-decoration:none;} .ds-cp{background:var(--accent);color:var(--bg-dark);} .ds-cp:hover{background:#7DD3C7;transform:translateY(-2px);} .ds-co{border:1px solid rgba(246,243,236,0.3);color:var(--foreground-inv);} .ds-co:hover{border-color:rgba(246,243,236,0.7);transform:translateY(-2px);} .ds-cp:focus-visible,.ds-co:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Your Whole File",
+    "overview": "**Creative North Star: \"Your Whole File\"**\n\nThe site is one practitioner's file, opened page by page. Every page is a sheet in the same folder: a navy page head carries the title, a cream reading body is cut with a folder tab where the two meet, and the content below is set as ruled ledger rows rather than marketing cards. Caslon, the face of printed statute and account books, sets every heading; Manrope carries the reading text at generous sizes for senior readers.\n\nDensity is calm and editorial: wide gutters, long measures capped at 56 to 68ch, hairline rules doing the work that boxes and shadows do elsewhere. Navy is the ground for heads and closes, cream is the paper for reading, and teal is used only where something can be acted on, shows a state, or is the single hero emphasis. Motion is restrained and functional; the one authored moment is the WebGL file stack in the home hero.\n\nConfirmed rejections, from the direction contract: no icon-tile card grids, no stock CA imagery, no eyebrows or kickers above headings, no section numbers.",
+    "keyCharacteristics": [
+      "Navy head, cream body, joined by a folder tab on every inner page.",
+      "Ruled ledger rows (heavy top rule, hairline rows, Caslon titles, sliding arrow) for every index.",
+      "Teal for action, state, and the single hero emphasis.",
+      "One shared gutter and container on every band, nav and hero included.",
+      "Visible-by-default content; reveals and the page crossfade are progressive enhancement."
+    ],
+    "rules": [
+      {
+        "name": "The Teal Means Something Rule",
+        "body": "Teal is for action, state, and the single hero emphasis. It is never a decorative fill, a section background, or a second headline emphasis.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Teals Rule",
+        "body": "Light teal (signal-teal) on navy, deep teal (ledger-teal) on cream. Focus outlines switch automatically: deep teal by default, light teal inside any navy or slate surface.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ledger Numerals Rule",
+        "body": "Dates, due dates and step ordinals use tabular lining numerals.",
+        "section": "typography"
+      },
+      {
+        "name": "The Balanced Head Rule",
+        "body": "H1 to H3 use balanced wrapping; paragraphs use pretty wrapping.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lifted Paper Rule",
+        "body": "Only things that are a separate sheet or object get a shadow. Ledger rows, sections and indexes stay flat and are divided by rules.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** wrap every band in 24px / 40px (lg) outer padding around a 1400px centred container with no inner padding, nav and hero included.",
+      "**Do** set indexes as ruled ledger rows: 2px ink rule at 85% on top, hairline rows, Caslon titles, an arrow that slides 4px on hover.",
+      "**Do** open every inner page with the navy page head and folder tab, and close it with the CtaBand.",
+      "**Do** use teal for action, state, and the single hero emphasis; light teal on navy, deep teal on cream.",
+      "**Do** keep content visible by default; reveals are one-time, 700ms expo-out with a 70ms stagger, and are skipped under reduced motion.",
+      "**Do** keep hover changes between 150 and 250ms.",
+      "**Do** keep the WebGL file stack as the only authored motion moment, with the still image as its fallback, and re-render file-stack.png when the scene changes.",
+      "**Do** cap reading measure at 56 to 68ch and keep body text at 15px or larger."
+    ],
+    "donts": [
+      "**Don't** put eyebrows or kickers above headings; uppercase labels only name form fields, table columns and data terms.",
+      "**Don't** number sections; ordinals belong only to genuinely ordered process steps.",
+      "**Don't** build icon-tile card grids or use stock CA imagery.",
+      "**Don't** use teal as decoration, a band background, or a second emphasis word in a headline.",
+      "**Don't** shadow ledger rows or sections; only lifted objects (slip, card, portrait, scrolled nav, menus) get shadows.",
+      "**Don't** add a second WebGL or scroll-driven scene, or run the file stack on touch, reduced motion or without WebGL2."
+    ]
+  }
+}

@@ -1,13 +1,25 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, Manrope } from "next/font/google";
+import { Libre_Caslon_Display, Libre_Caslon_Text, Manrope } from "next/font/google";
+
 import { MotionProvider } from "@/components/MotionProvider";
+import { RevealObserver } from "@/components/RevealObserver";
+import { Navbar } from "@/components/nav/Navbar";
+import { BackToTop } from "@/components/nav/BackToTop";
+import { Footer } from "@/components/sections/Footer";
 import "./globals.css";
 
-const dmSerifDisplay = DM_Serif_Display({
+const caslonDisplay = Libre_Caslon_Display({
   subsets: ["latin"],
-  style: ["normal", "italic"],
   weight: "400",
-  variable: "--font-dm-serif",
+  variable: "--font-caslon-display",
+  display: "swap",
+});
+
+const caslonText = Libre_Caslon_Text({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-caslon-text",
   display: "swap",
 });
 
@@ -19,20 +31,34 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "CA Nishita Gandhi, Chartered Accountant in Mulund, Mumbai",
+  metadataBase: new URL("https://canishitagandhi.yanisa.in"),
+  title: "Chartered Accountant in Mulund, Mumbai | CA Nishita Gandhi",
   description:
-    "Income tax, NRI tax, GST, audit and company compliance. Chartered Accountant since 2015, based in Mulund West, Mumbai.",
+    "CA Nishita Gandhi, Chartered Accountant in Mulund, Mumbai: income tax, GST, audit, corporate tax, NRI taxation, company compliance and accounting.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${dmSerifDisplay.variable} ${manrope.variable}`}>
+    <html lang="en-IN" suppressHydrationWarning className={`${caslonDisplay.variable} ${caslonText.variable} ${manrope.variable}`}>
+      <head>
+        {/* Reveal styles only apply once JS is known to run, so content is never hidden without it */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+      </head>
       <body className="font-sans antialiased">
-        <MotionProvider>{children}</MotionProvider>
+        <div id="top" />
+        <a
+          href="#main"
+          className="fixed left-4 top-4 z-[60] -translate-y-24 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-bg-dark transition-transform focus:translate-y-0"
+        >
+          Skip to content
+        </a>
+        <MotionProvider>
+          <Navbar />
+          <main id="main">{children}</main>
+          <Footer />
+          <BackToTop />
+          <RevealObserver />
+        </MotionProvider>
       </body>
     </html>
   );
